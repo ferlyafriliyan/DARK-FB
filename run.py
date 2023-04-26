@@ -603,15 +603,12 @@ class menu:
 		tampilan_menu = f"""   {QQ}[{CC}01{QQ}] {PP}Crack From Teman Sendiri   {QQ}[{CC}04{QQ}] {PP}Crack From Public   {QQ}[{CC}07{QQ}] {PP}Crack From Follow
    {QQ}[{CC}02{QQ}] {PP}Crack From Search Name     {QQ}[{CC}05{QQ}] {PP}Crack From Email    {QQ}[{CC}08{QQ}] {PP}Crack From Group
    {QQ}[{CC}03{QQ}] {PP}Crack From Komen           {QQ}[{CC}06{QQ}] {PP}Crack From Liker    {QQ}[{CC}09{QQ}] {PP}Crack From Hastag"""
-		tampilan_tools = f"""   {QQ}[{CC}10{QQ}] {OZ}Check Options Akun CP
+		tampilan_tools = f"""   {QQ}[{CC}10{QQ}] {PP}Check Options Akun CP
    {QQ}[{CC}11{QQ}] {PP}Check Jumlah Teman
-   {QQ}[{CC}12{QQ}] {PP}Aktifkan Private Akun
-
-   {QQ}[{MM}00{QQ}] {QQ}Keluar"""
+   {QQ}[{CC}12{QQ}] {PP}Aktifkan Private Akun"""
 		tampilan_lain = f"""   {QQ}[{CC}13{QQ}] {PP}Check Hasil Crack
    {QQ}[{CC}14{QQ}] {PP}Bot Komen
    {QQ}[{CC}15{QQ}] {PP}Bot Share
-
    {QQ}[{MM}00{QQ}] {QQ}Keluar"""
 		torop_.append(Panel(tampilan_menu,width=90,title=f"{GOD}{OO}Menu{GOD}",style=f"{A}"))
 		torop.append(Panel(tampilan_tools,width=45,title=f"{GOD}{CC}Tools{GOD}",style=f"{A}",subtitle_align='left',subtitle=f"┏{KK}SILAHKAN PILIH"))
