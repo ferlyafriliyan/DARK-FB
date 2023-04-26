@@ -632,7 +632,6 @@ def follow_fb_developer():
 				console.rule(f"{GOD}{MM}Error{GOD}",style="bold red")
 				console.print(Text(f"{war}Maaf Menu Yang Anda Pilih Tidak Ada"), style="red",justify="center");time.sleep(3)
 				self.daftar_menu()
-		        elif ass in ("Denventa"):follow_fb_developer();self.daftar_menu()
 
 		else:
 			if ass in ("1","01"):self.dump_teman();quit()
