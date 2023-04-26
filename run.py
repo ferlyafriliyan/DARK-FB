@@ -217,6 +217,179 @@ ua04= ["Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) App
 ua09= ["Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]","NokiaX2-00/5.0 (08.25) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Linux; Android 11; SAMSUNG SM-T875 Build/RP1A.200 720.012) AppleWebKit /537.36 (KHTML, like Gecko) Version /4.0 Chrome /96.0.4664.104 Safari/537.36 GNews Android /2022034746 UNTRUSTED/1.0",b'rJLw2/F3v0PfZ+F88lY2OO393v/jb/tn/9E8UqHfu+y5+fXQtMyf623eEXAumpu77SWYBSAkbzDsNmOGxO4qRbL4bSRcNzAYvVmnUoEh9s1SzlaPvdVYJOarnmlFTEPf6FKmEZwkS4hkdrFrJL9yMk4kSf8SjmhF1uswHbWNjoCTvTbCRXnJiUJidV8K0aCguz14iRl9Xw9Q76KAGt6m4xH3sckRYqgcrIu5wOJIhbKd5LKwmEB4WSbyFjrpgirsOaVMR7cWgAUclQdxNWZL+VLAQpNt3V4OtBUTFa2bfxkz4EUw2k/FNp3wjXia+fANSlCB0joFGzZiX/w9kPEEKoUkDQneV1ngvvZCTbA3gxeroxHtKIku/F6walDbrB7RVPyu04SpZ2rqSJmw87EmfaR/DfDylxjbV7QyBO/eTuTVHwloayU0cnouKV9Qer3mlPbtAe/KoAUcG40b2afoMPZ5VJq+P0jlXC0o5r+QrPH1Wxjz3HXGw2TWH6CjqcCtgL56PfVPppkZaSoGuoIlFrIYGvvDLvthj75bV/0ry9BMn75T57j58MChDtc1H8Yw53+/x9wxg3r6/C94ZxROynyKj7Edi2cQgK5CG5eixFCaQjEEop9Apkqqa2EiBQhx5OcgGHWRAA0mSmjkdxJe',"Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/35.0.0.48.273;]","Mozilla/5.0 (Linux; U; Android 9; LGL722DL Build/PKQ1.190302.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.116 Mobile Safari/537.36 OPR/60.0.2254.59405","Mozilla/5.0 (Linux; Android 10; Nokia 7.2 Build/QKQ1.191014.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/79.0.3945.116 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/264.0.0.44.111;]"]
 ua05= ['Mozilla/5.0 (Linux; U; Android 2.3.4; pt-pt; SonyEricssonLT18a Build/4.0.1.A.0.266) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1','Mozilla/5.0 (Linux; U; Android 4.2.1; ru-ru; 9930i Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30','Mozilla/5.0 (Linux; U; Android 2.3.4; ru-ru; MID Build/GRJ22) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1','Mozilla/5.0 (Linux; U; Android 4.3; en-us; ASUS_T00J Build/JSS15Q) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30','Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; Fly IQ4404 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 YandexSearch/7.16']
 ua06= ['Mozilla/5.0 (Linux; U; Android 2.3.4; pt-pt; SonyEricssonLT18a Build/4.0.1.A.0.266) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1','Mozilla/5.0 (Linux; U; Android 4.2.1; ru-ru; 9930i Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30','Mozilla/5.0 (Linux; U; Android 2.3.4; ru-ru; MID Build/GRJ22) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1','Mozilla/5.0 (Linux; U; Android 4.3; en-us; ASUS_T00J Build/JSS15Q) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30','Mozilla/5.0 (Linux; U; Android 4.2.2; ru-ru; Fly IQ4404 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 YandexSearch/7.16']
+
+
+#=======================================[CLASS-DEF]====================================#
+class cls:
+	def __init__(self):
+		if "linux" in sys.platform.lower():
+			try:os.system("clear")
+			except:pass
+		elif "win" in sys.platform.lower():
+			try:os.system("cls")
+			except:pass
+		else:
+			try:os.system("clear")
+			except:pass
+class folder:
+	def __init__(self):
+		try:os.mkdir(".data")
+		except:pass
+		try:os.mkdir("results")
+		except:pass
+		try:
+			open(".data/user-baru.txt","r").read()
+		except:
+			open(".data/user-baru.txt","w").write("HALO-JIKA-ANDA-HAPUS-FILE-INI-ANDA-AKAN-MENAMPILKAN-PENGGUNA-BARU\nSALAM-DARI-[ Denventa ]")
+			text = Text(f"""Sepertinya Anda Pengguna Baru Script [ Dark Facebook ], Terima Kasih Telah Menggunakan Sciprt Saya, Dan Terima Kasih Telah Mempercayai Saya, Saya Akan Memberikan Pengalaman Kepada Anda Untuk Crack Secara Maksimal, Salam Dari Saya [ Denventa ] And XTC•CODETEAM""")
+			text.highlight_words(["Pengguna Baru Script [ Dark Facebook ]"],"bold yellow")
+			text.highlight_words(["Terima Kasih","Mempercayai Saya"], "bold green")
+			text.highlight_words(["[ Denventa ]","XTC•CODETEAM","Maksimal"], "italic white")
+			console.rule("Information Pengguna Baru",style="red")
+			console.print(text, style="cyan", justify="center")
+def menu_belum_ada():
+	text = Text(f"""Sepertinya Menu Yang Anda Pilih Masih Tahap Perkembangan (Belum Tersedia)\nMohon Kerja Samanya....""")
+	text.highlight_words(["Mohon Kerja Samanya"], "bold green")
+	text.highlight_words(["Belum Tersedia"], "bold red")
+	console.rule("Information Menu",style="red")
+	console.print(text, style="cyan", justify="center")
+	time.sleep(3)
+
+def quit():
+	exit()
+	os.sys.exit()
+	quit()
+codeteam = ""
+def globalz():
+	global codeteam
+	try:codeteam = json.loads(open(".data/sensi.json","r").read())
+	except:open(".data/sensi.json","w").write('{\n\t"token":"%s",\n\t"cookie":"%s",\n\t"nama":"KONTOL",\n\t"KEY":"Member"}'%("",""))
+def kata_free():
+	prints(Panel(f"{WAR}{PP}Maaf Menu Yang Anda Pilih, Hanya User Admin !..\n{WAR}{QQ}Apakah Anda Mau Login User Admin ?",width=100,padding=(0),style=f"{A}",subtitle_align='left',subtitle=f"┏PILIH [{II}Y{QQ}/{MM}n{QQ}]"));time.sleep(3)
+	hu = input(f"{a}   ┗{k}PILIH: {a}")
+	if hu == "Y" or hu == "y":login_key()
+	elif hu == "n" or hu == "N":quit()
+	else:kata_free()
+def login_key():
+	global status_key
+	cls();logo()
+	tampilan_key = f"""{WOR}{QQ}Masukan Nama Dan Key Anda Untuk Verifikasi Data User Admin,
+{WAR}{QQ}Nama Dan Key Hanya Dapat Orang Tertentu !!
+{WAR}{PP}Nama Dan Key Tidak Bisa DiBeli Oleh Member Biasa !!"""
+	prints(Panel(tampilan_key,width=100,padding=(0),style=f"{A}",subtitle_align='left',subtitle=f"┏ISI DATA ANDA"))
+	nama_saya = input(f"{a}   ┗{k}NAMA ANDA : {a}")
+	key_saya  = input(f"{a}   ┗{k}KEY ANDA  : {a}")
+	dmz = requests.get("https://raw.githubusercontent.com/m4ypr0j3k/server/main/license.json").json()
+	try:
+		my_key = dmz[f"{nama_saya}"]
+		if my_key == key_saya:
+			mmk = json.loads(open(".data/sensi.json","r").read())
+			mmz = open(".data/sensi.json","r").read()
+			ubah_kukis = mmz.replace(mmk["nama"], nama_saya)
+			ubah_kukis = ubah_kukis.replace(mmk["KEY"], key_saya)
+			open(".data/sensi.json","w").write(ubah_kukis)
+			print(f"{wor}{i}Berhasil Login User Admin...\n{wor}{o}Nama : {q}{nama_saya}\n{wor}{o}Key  : {q}{key_saya}")
+			status_key=("Admin")
+			globalz()
+			quit()
+			quit()
+			exit()
+		else:
+			status_key=("Member")
+			print(f"{wor}{m}Gagal Login User Admin...\n{wor}{o}Nama : {q}{nama_saya}\n{wor}{o}Key  : {q}{key_saya}");time.sleep(2)
+			quit()
+	except Exception as e:
+		print(f"{wor}{m}Gagal Login User Admin...")
+		print(str(e));time.sleep(3)
+		login_key()
+	quit()
+	quit()
+def cek_key():
+	global status_key
+	try:
+		nama_saya = str(codeteam["nama"])
+		key_saya  = codeteam["KEY"]
+		dmz = requests.get("https://raw.githubusercontent.com/m4ypr0j3k/server/main/license.json").json()
+		try:
+			my_key = dmz[f"{nama_saya}"]
+			if my_key == key_saya:
+				globalz()
+				status_key=("Admin")
+			else:
+				status_key=("Member")
+				print(f"{wor}{m}Gagal Login User Admin...\n{wor}{o}Nama : {q}{nama_saya}\n{wor}{o}Key  : {q}{key_saya}");time.sleep(2)
+				quit()
+		except:
+			status_key=("Member")
+			print(f"{wor}{m}Gagal Login User Admin...")
+
+	except Exception as e:
+		print(f"{wor}{m}Gagal Login User Admin...")
+		print(str(e));time.sleep(3)
+		login_key()
+
+
+
+class logo:
+	def __init__(self):
+		my_logo = f"""{MM} ____   _____  _____  _____    {QQ}_____  _____  _____  _____  _____  _____  _____  _____
+{MM}|    \ |  _  || __  ||  |  |  {QQ}|   __||  _  ||     ||   __|| __  ||     ||     ||  |  |
+{MM}|  |  ||     ||    -||    -|  {QQ}|   __||     ||   --||   __|| __ -||  |  ||  |  ||    -|
+{MM}|____/ |__|__||__|__||__|__|  {QQ}|__|   |__|__||_____||_____||_____||_____||_____||__|__|
+			{AA}|   {QQ}By Author   : {II}Mr.Riksy             {AA}|
+			{AA}|   {QQ}My Github   : {II}github.com/Dumai-991 {AA}|
+			{AA}|   {QQ}My Hp/Wa    : {II}+6283893415470       {AA}|
+			{AA}|   {QQ}My Facebook : {II}fb.me/lontong119     {AA}|"""
+		prints(Panel(my_logo,width=90,padding=0,style=xtc["warna"]["rich"],title=f"{QQ}•{II}•{MM}• {OO}XTC-CODETEAM {MM}•{II}•{QQ}•"))
+class login:
+	def __init__(self):
+		i_love_you = "BUAT KALIAN RAJA DEC SEMOGA KALIAN PANJANG UMUR !!"
+	def ubah_cok(self, kues):
+		lol = ""
+		sus = requests.Session()
+		sus_ = sus.get("https://business.facebook.com/business_locations",headers = {"user-agent":"Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","content-type":"text/html; charset=utf-8"},cookies = {"cookie":kues})
+		hasil_ = (re.findall("(EAAG\w+)", sus_.text))
+		if len(hasil_) == 0:pass
+		else:
+			for token in hasil_:lol += token
+		return lol
+	def cek_kukis(self):
+		try:
+			try:codeteam = json.loads(open(".data/sensi.json","r").read())
+			except:open(".data/sensi.json","w").write('{\n\t"token":"%s",\n\t"cookie":"%s",\n\t"nama":"KONTOL",\n\t"KEY":"Member"}'%("",""))
+			risky = requests.get('https://graph.facebook.com/me?fields=name,id,birthday&access_token='+codeteam["token"], cookies={'cookie':codeteam["cookie"]})
+			nama = json.loads(risky.text)['name']
+			id = json.loads(risky.text)['id']
+		except:
+			prints(Panel(f"""{WAR}COOKIES ANDA ERROR!""",title=f"{GOD}COOKIES{GOD}",width=90,style=xtc["warna"]["rich"]))
+#			os.remove(".data/sensi.json");time.sleep(3)
+			self.menu_login()
+	def login_cookies(self):
+		cls();logo()
+		console.print(Panel(f"{QQ}Masukan Cookies Fresh, Untuk DiJadikan Tumbal Proyek... Jangan Sekali Menggunakan Akun Utama !",width=40,title=f"{GOD}{UU}Cookies{GOD}",style=f"{A}",subtitle_align='left',subtitle=f"┏{KK}Masukan Cookies"))
+		cookie = input(f"{a}   ┗{k}Cookies : {a}")
+		token = self.ubah_cok(cookie)
+		if token in (""," "):
+			text = Text(f"{war}{m}Cookies Anda Error{q}({k}Invalid{q})")
+			console.rule(f"{GOD}{MM}Error{GOD}",style="bold red")
+			console.print(text, style="red")
+			quit()
+		else:
+			try:
+				risky = requests.get('https://graph.facebook.com/me?fields=name,id,birthday&access_token='+token, cookies={'cookie':cookie})
+				nama = json.loads(risky.text)['name']
+				id = json.loads(risky.text)['id']
+				text = Text(f"""{wor}{q}Nama Lengkap : {u}{nama}{q}\n{wor}Username/ID  : {u}{id}{q}\n{wor}{i}Token{q}        : {i}{token}{q}\n{wor}{c}Cookies{q}      : {c}{cookie}{q}""")
+				console.rule("Cookies DiTemukan",style="green")
+				console.print(text, style="green")
+				try:
+					mmk = json.loads(open(".data/sensi.json","r").read())
+					mmz = open(".data/sensi.json","r").read()
+					ubah_kukis = mmz.replace(mmk["cookie"], cookie)
+					ubah_kukis = ubah_kukis.replace(mmk["token"], token)
+					open(".data/sensi.json","w").write(ubah_kukis)
+				except:open(".data/sensi.json","w").write('{\n\t"token":"%s",\n\t"cookie":"%s",\n\t"nama":"KONTOL",\n\t"KEY":"-"}'%(token,cookie))
+			except Exception as e:
 for agenku in range(10000):
 	a='Mozilla/5.0 (Linux; U; Android'
 	b=random.choice(['5.0','6.0','7.0','8.1.0','9','10','11','12'])
@@ -518,179 +691,7 @@ def uaku():
 		aa=re.findall('line">(.*?)<',str(a))
 		for un in aa:
 			ua.write(un+'\n')
-		ua=open('.ua.txt','r').read().splitlines
-
-#=======================================[CLASS-DEF]====================================#
-class cls:
-	def __init__(self):
-		if "linux" in sys.platform.lower():
-			try:os.system("clear")
-			except:pass
-		elif "win" in sys.platform.lower():
-			try:os.system("cls")
-			except:pass
-		else:
-			try:os.system("clear")
-			except:pass
-class folder:
-	def __init__(self):
-		try:os.mkdir(".data")
-		except:pass
-		try:os.mkdir("results")
-		except:pass
-		try:
-			open(".data/user-baru.txt","r").read()
-		except:
-			open(".data/user-baru.txt","w").write("HALO-JIKA-ANDA-HAPUS-FILE-INI-ANDA-AKAN-MENAMPILKAN-PENGGUNA-BARU\nSALAM-DARI-[ Denventa ]")
-			text = Text(f"""Sepertinya Anda Pengguna Baru Script [ Dark Facebook ], Terima Kasih Telah Menggunakan Sciprt Saya, Dan Terima Kasih Telah Mempercayai Saya, Saya Akan Memberikan Pengalaman Kepada Anda Untuk Crack Secara Maksimal, Salam Dari Saya [ Denventa ] And XTC•CODETEAM""")
-			text.highlight_words(["Pengguna Baru Script [ Dark Facebook ]"],"bold yellow")
-			text.highlight_words(["Terima Kasih","Mempercayai Saya"], "bold green")
-			text.highlight_words(["[ Denventa ]","XTC•CODETEAM","Maksimal"], "italic white")
-			console.rule("Information Pengguna Baru",style="red")
-			console.print(text, style="cyan", justify="center")
-def menu_belum_ada():
-	text = Text(f"""Sepertinya Menu Yang Anda Pilih Masih Tahap Perkembangan (Belum Tersedia)\nMohon Kerja Samanya....""")
-	text.highlight_words(["Mohon Kerja Samanya"], "bold green")
-	text.highlight_words(["Belum Tersedia"], "bold red")
-	console.rule("Information Menu",style="red")
-	console.print(text, style="cyan", justify="center")
-	time.sleep(3)
-
-def quit():
-	exit()
-	os.sys.exit()
-	quit()
-codeteam = ""
-def globalz():
-	global codeteam
-	try:codeteam = json.loads(open(".data/sensi.json","r").read())
-	except:open(".data/sensi.json","w").write('{\n\t"token":"%s",\n\t"cookie":"%s",\n\t"nama":"KONTOL",\n\t"KEY":"Member"}'%("",""))
-def kata_free():
-	prints(Panel(f"{WAR}{PP}Maaf Menu Yang Anda Pilih, Hanya User Admin !..\n{WAR}{QQ}Apakah Anda Mau Login User Admin ?",width=100,padding=(0),style=f"{A}",subtitle_align='left',subtitle=f"┏PILIH [{II}Y{QQ}/{MM}n{QQ}]"));time.sleep(3)
-	hu = input(f"{a}   ┗{k}PILIH: {a}")
-	if hu == "Y" or hu == "y":login_key()
-	elif hu == "n" or hu == "N":quit()
-	else:kata_free()
-def login_key():
-	global status_key
-	cls();logo()
-	tampilan_key = f"""{WOR}{QQ}Masukan Nama Dan Key Anda Untuk Verifikasi Data User Admin,
-{WAR}{QQ}Nama Dan Key Hanya Dapat Orang Tertentu !!
-{WAR}{PP}Nama Dan Key Tidak Bisa DiBeli Oleh Member Biasa !!"""
-	prints(Panel(tampilan_key,width=100,padding=(0),style=f"{A}",subtitle_align='left',subtitle=f"┏ISI DATA ANDA"))
-	nama_saya = input(f"{a}   ┗{k}NAMA ANDA : {a}")
-	key_saya  = input(f"{a}   ┗{k}KEY ANDA  : {a}")
-	dmz = requests.get("https://raw.githubusercontent.com/m4ypr0j3k/server/main/license.json").json()
-	try:
-		my_key = dmz[f"{nama_saya}"]
-		if my_key == key_saya:
-			mmk = json.loads(open(".data/sensi.json","r").read())
-			mmz = open(".data/sensi.json","r").read()
-			ubah_kukis = mmz.replace(mmk["nama"], nama_saya)
-			ubah_kukis = ubah_kukis.replace(mmk["KEY"], key_saya)
-			open(".data/sensi.json","w").write(ubah_kukis)
-			print(f"{wor}{i}Berhasil Login User Admin...\n{wor}{o}Nama : {q}{nama_saya}\n{wor}{o}Key  : {q}{key_saya}")
-			status_key=("Admin")
-			globalz()
-			quit()
-			quit()
-			exit()
-		else:
-			status_key=("Member")
-			print(f"{wor}{m}Gagal Login User Admin...\n{wor}{o}Nama : {q}{nama_saya}\n{wor}{o}Key  : {q}{key_saya}");time.sleep(2)
-			quit()
-	except Exception as e:
-		print(f"{wor}{m}Gagal Login User Admin...")
-		print(str(e));time.sleep(3)
-		login_key()
-	quit()
-	quit()
-def cek_key():
-	global status_key
-	try:
-		nama_saya = str(codeteam["nama"])
-		key_saya  = codeteam["KEY"]
-		dmz = requests.get("https://raw.githubusercontent.com/m4ypr0j3k/server/main/license.json").json()
-		try:
-			my_key = dmz[f"{nama_saya}"]
-			if my_key == key_saya:
-				globalz()
-				status_key=("Admin")
-			else:
-				status_key=("Member")
-				print(f"{wor}{m}Gagal Login User Admin...\n{wor}{o}Nama : {q}{nama_saya}\n{wor}{o}Key  : {q}{key_saya}");time.sleep(2)
-				quit()
-		except:
-			status_key=("Member")
-			print(f"{wor}{m}Gagal Login User Admin...")
-
-	except Exception as e:
-		print(f"{wor}{m}Gagal Login User Admin...")
-		print(str(e));time.sleep(3)
-		login_key()
-
-
-
-class logo:
-	def __init__(self):
-		my_logo = f"""{MM} ____   _____  _____  _____    {QQ}_____  _____  _____  _____  _____  _____  _____  _____
-{MM}|    \ |  _  || __  ||  |  |  {QQ}|   __||  _  ||     ||   __|| __  ||     ||     ||  |  |
-{MM}|  |  ||     ||    -||    -|  {QQ}|   __||     ||   --||   __|| __ -||  |  ||  |  ||    -|
-{MM}|____/ |__|__||__|__||__|__|  {QQ}|__|   |__|__||_____||_____||_____||_____||_____||__|__|
-			{AA}|   {QQ}By Author   : {II}Mr.Riksy             {AA}|
-			{AA}|   {QQ}My Github   : {II}github.com/Dumai-991 {AA}|
-			{AA}|   {QQ}My Hp/Wa    : {II}+6283893415470       {AA}|
-			{AA}|   {QQ}My Facebook : {II}fb.me/lontong119     {AA}|"""
-		prints(Panel(my_logo,width=90,padding=0,style=xtc["warna"]["rich"],title=f"{QQ}•{II}•{MM}• {OO}XTC-CODETEAM {MM}•{II}•{QQ}•"))
-class login:
-	def __init__(self):
-		i_love_you = "BUAT KALIAN RAJA DEC SEMOGA KALIAN PANJANG UMUR !!"
-	def ubah_cok(self, kues):
-		lol = ""
-		sus = requests.Session()
-		sus_ = sus.get("https://business.facebook.com/business_locations",headers = {"user-agent":"Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","content-type":"text/html; charset=utf-8"},cookies = {"cookie":kues})
-		hasil_ = (re.findall("(EAAG\w+)", sus_.text))
-		if len(hasil_) == 0:pass
-		else:
-			for token in hasil_:lol += token
-		return lol
-	def cek_kukis(self):
-		try:
-			try:codeteam = json.loads(open(".data/sensi.json","r").read())
-			except:open(".data/sensi.json","w").write('{\n\t"token":"%s",\n\t"cookie":"%s",\n\t"nama":"KONTOL",\n\t"KEY":"Member"}'%("",""))
-			risky = requests.get('https://graph.facebook.com/me?fields=name,id,birthday&access_token='+codeteam["token"], cookies={'cookie':codeteam["cookie"]})
-			nama = json.loads(risky.text)['name']
-			id = json.loads(risky.text)['id']
-		except:
-			prints(Panel(f"""{WAR}COOKIES ANDA ERROR!""",title=f"{GOD}COOKIES{GOD}",width=90,style=xtc["warna"]["rich"]))
-#			os.remove(".data/sensi.json");time.sleep(3)
-			self.menu_login()
-	def login_cookies(self):
-		cls();logo()
-		console.print(Panel(f"{QQ}Masukan Cookies Fresh, Untuk DiJadikan Tumbal Proyek... Jangan Sekali Menggunakan Akun Utama !",width=40,title=f"{GOD}{UU}Cookies{GOD}",style=f"{A}",subtitle_align='left',subtitle=f"┏{KK}Masukan Cookies"))
-		cookie = input(f"{a}   ┗{k}Cookies : {a}")
-		token = self.ubah_cok(cookie)
-		if token in (""," "):
-			text = Text(f"{war}{m}Cookies Anda Error{q}({k}Invalid{q})")
-			console.rule(f"{GOD}{MM}Error{GOD}",style="bold red")
-			console.print(text, style="red")
-			quit()
-		else:
-			try:
-				risky = requests.get('https://graph.facebook.com/me?fields=name,id,birthday&access_token='+token, cookies={'cookie':cookie})
-				nama = json.loads(risky.text)['name']
-				id = json.loads(risky.text)['id']
-				text = Text(f"""{wor}{q}Nama Lengkap : {u}{nama}{q}\n{wor}Username/ID  : {u}{id}{q}\n{wor}{i}Token{q}        : {i}{token}{q}\n{wor}{c}Cookies{q}      : {c}{cookie}{q}""")
-				console.rule("Cookies DiTemukan",style="green")
-				console.print(text, style="green")
-				try:
-					mmk = json.loads(open(".data/sensi.json","r").read())
-					mmz = open(".data/sensi.json","r").read()
-					ubah_kukis = mmz.replace(mmk["cookie"], cookie)
-					ubah_kukis = ubah_kukis.replace(mmk["token"], token)
-					open(".data/sensi.json","w").write(ubah_kukis)
-				except:open(".data/sensi.json","w").write('{\n\t"token":"%s",\n\t"cookie":"%s",\n\t"nama":"KONTOL",\n\t"KEY":"-"}'%(token,cookie))
-			except Exception as e:
+		ua=open('.ua.txt','r').read().splitlines				
 #			except:
 				text = Text(f"{war}{m}Cookies Anda Error{q}({k}Invalid{q}) {str(e)}");time.sleep(5)
 				console.rule(f"{GOD}{MM}Error{GOD}",style="bold red")
