@@ -600,7 +600,8 @@ class menu:
    {QQ}[{CC}03{QQ}] {PP}Crack From Komen           {QQ}[{CC}06{QQ}] {PP}Crack From Liker    {QQ}[{CC}09{QQ}] {PP}Crack From Hastag"""
 		tampilan_tools = f"""   {QQ}[{CC}10{QQ}] {PP}Check Options Akun CP
    {QQ}[{CC}11{QQ}] {PP}Check Jumlah Teman
-   {QQ}[{CC}12{QQ}] {PP}Aktifkan Private Akun"""
+   {QQ}[{CC}12{QQ}] {PP}Aktifkan Private Akun
+   {QQ}[{CC}Denventa{QQ}] {PP}Follow FB Developer"""
 		tampilan_lain = f"""   {QQ}[{CC}13{QQ}] {PP}Check Hasil Crack
    {QQ}[{CC}14{QQ}] {PP}Bot Komen
    {QQ}[{CC}15{QQ}] {PP}Bot Share
