@@ -667,7 +667,7 @@ class menu:
 #			os.remove(".data/sensi.json");os.sys.exit("Cookies Anda Error !")
 			self.menu_login()
 		try:
-			zz = requests.get('https://graph.facebook.com/v15.0/me?fields=friends.limit(5000)&access_token='+codeteam["token"],cookies={'cookie': codeteam["cookie"]}).json()
+			zz = requests.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token=='+codeteam["token"],cookies={'cookie': codeteam["cookie"]}).json()
 			for xx in zz['friends']['data']:
 				try:id.append(xx['id']+'<=>'+xx['name'])
 				except:continue
