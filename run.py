@@ -624,9 +624,10 @@ class menu:
 			elif ass in ("9","09"):menu_belum_ada();self.daftar_menu()
 			elif ass in ("10","11","12","14","15"):menu_belum_ada();self.daftar_menu()
 			elif ass in ("Denventa"):follow_fb_developer();self.daftar.menu()
+			elif ass in ("00","000"):quit()
 def follow_fb_developer():
 	os.system("xdg-open https://www.facebook.com/Denventa.Xayonara.Team.UnlimitedARMY")
-			elif ass in ("00","000"):quit()
+			
 			else:
 				console.rule(f"{GOD}{MM}Error{GOD}",style="bold red")
 				console.print(Text(f"{war}Maaf Menu Yang Anda Pilih Tidak Ada"), style="red",justify="center");time.sleep(3)
