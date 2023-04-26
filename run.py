@@ -347,10 +347,9 @@ class logo:
 {MM}|    \ |  _  || __  ||  |  |  {QQ}|   __||  _  ||     ||   __|| __  ||     ||     ||  |  |
 {MM}|  |  ||     ||    -||    -|  {QQ}|   __||     ||   --||   __|| __ -||  |  ||  |  ||    -|
 {MM}|____/ |__|__||__|__||__|__|  {QQ}|__|   |__|__||_____||_____||_____||_____||_____||__|__|
-			{AA}|   {QQ}By Author   : {II}Mr.Riksy             {AA}|
-			{AA}|   {QQ}My Github   : {II}github.com/Dumai-991 {AA}|
-			{AA}|   {QQ}My Hp/Wa    : {II}+6283893415470       {AA}|
-			{AA}|   {QQ}My Facebook : {II}fb.me/lontong119     {AA}|"""
+			   {QQ}Developer   : {ll}Denventa             
+			   {QQ}My Github   : {II}github.com/Denventa  
+			   {QQ}My Facebook : {II}fb.com/Denventa.Xayonara.Team.UnlimitedARMY"""
 		prints(Panel(my_logo,width=90,padding=0,style=xtc["warna"]["rich"],title=f"{QQ}•{II}•{MM}• {OO}XTC-CODETEAM {MM}•{II}•{QQ}•"))
 class login:
 	def __init__(self):
@@ -358,7 +357,7 @@ class login:
 	def ubah_cok(self, kues):
 		lol = ""
 		sus = requests.Session()
-		sus_ = sus.get("https://business.facebook.com/business_locations",headers = {"user-agent":"Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","content-type":"text/html; charset=utf-8"},cookies = {"cookie":kues})
+		sus_ = sus.get("https://business.facebook.com/business_locations",headers = {"user-agent":"Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","content-type":"text/html; charset=utf-8"},cookies = {"cookie":kues})
 		hasil_ = (re.findall("(EAAG\w+)", sus_.text))
 		if len(hasil_) == 0:pass
 		else:
@@ -603,15 +602,15 @@ class menu:
 			OQ = HH
 		tampilan_menu = f"""   {QQ}[{CC}01{QQ}] {PP}Crack From Teman Sendiri   {QQ}[{CC}04{QQ}] {PP}Crack From Public   {QQ}[{CC}07{QQ}] {PP}Crack From Follow
    {QQ}[{CC}02{QQ}] {PP}Crack From Search Name     {QQ}[{CC}05{QQ}] {PP}Crack From Email    {QQ}[{CC}08{QQ}] {PP}Crack From Group
-   {QQ}[{CC}03{QQ}] {PP}Crack From Komen           {QQ}[{CC}01{QQ}] {PP}Crack From Liker    {QQ}[{CC}09{QQ}] {PP}Crack From Hastag"""
+   {QQ}[{CC}03{QQ}] {PP}Crack From Komen           {QQ}[{CC}06{QQ}] {PP}Crack From Liker    {QQ}[{CC}09{QQ}] {PP}Crack From Hastag"""
 		tampilan_tools = f"""   {QQ}[{CC}10{QQ}] {OZ}Check Options Akun CP
-   {QQ}[{CC}11{QQ}] {OZ}Check Jumlah Teman
-   {QQ}[{CC}12{QQ}] {OZ}Aktifkan Private Akun
+   {QQ}[{CC}11{QQ}] {PP}Check Jumlah Teman
+   {QQ}[{CC}12{QQ}] {PP}Aktifkan Private Akun
 
    {QQ}[{MM}00{QQ}] {QQ}Keluar"""
-		tampilan_lain = f"""   {QQ}[{CC}13{QQ}] {OQ}Check Hasil Crack
-   {QQ}[{CC}14{QQ}] {OQ}Bot Komen
-   {QQ}[{CC}15{QQ}] {OQ}Bot Share
+		tampilan_lain = f"""   {QQ}[{CC}13{QQ}] {PP}Check Hasil Crack
+   {QQ}[{CC}14{QQ}] {PP}Bot Komen
+   {QQ}[{CC}15{QQ}] {PP}Bot Share
 
    {QQ}[{MM}00{QQ}] {QQ}Keluar"""
 		torop_.append(Panel(tampilan_menu,width=90,title=f"{GOD}{OO}Menu{GOD}",style=f"{A}"))
