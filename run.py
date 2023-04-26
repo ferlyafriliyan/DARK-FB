@@ -601,7 +601,7 @@ class menu:
 		tampilan_tools = f"""   {QQ}[{CC}10{QQ}] {PP}Check Options Akun CP
    {QQ}[{CC}11{QQ}] {PP}Check Jumlah Teman
    {QQ}[{CC}12{QQ}] {PP}Aktifkan Private Akun
-   {QQ}[{CC}44{QQ}] {PP}Follow FB Developer"""
+   {QQ}[{CC}00{QQ}] {PP}Keluar"""
 		tampilan_lain = f"""   {QQ}[{CC}13{QQ}] {PP}Check Hasil Crack
    {QQ}[{CC}14{QQ}] {PP}Bot Komen
    {QQ}[{CC}15{QQ}] {PP}Bot Share
@@ -622,12 +622,9 @@ class menu:
 			elif ass in ("7","07"):self.dump_follow();quit()
 			elif ass in ("8","08"):menu_belum_ada();self.daftar_menu()
 			elif ass in ("9","09"):menu_belum_ada();self.daftar_menu()
-			elif ass in ("10","11","12","14","15"):menu_belum_ada();self.daftar_menu()
+			elif ass in ("10","11","12","13","14","15"):menu_belum_ada();self.daftar_menu()
 #			elif ass in ("",""):
-elif ass in ("44","044"):follow_fb_developer();self.daftar_menu()
 			elif ass in ("00","000"):quit()
-	      			def follow_fb_developer():
-					os.system("xdg-open https://www.facebook.com/Denventa.Xayonara.Team.UnlimitedARMY")
 			else:
 				console.rule(f"{GOD}{MM}Error{GOD}",style="bold red")
 				console.print(Text(f"{war}Maaf Menu Yang Anda Pilih Tidak Ada"), style="red",justify="center");time.sleep(3)
