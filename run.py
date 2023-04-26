@@ -626,8 +626,8 @@ class menu:
 #			elif ass in ("",""):
 		        elif ass in ("44","044"):follow_fb_developer();self.daftar_menu()
 			elif ass in ("00","000"):quit()
-def follow_fb_developer():
-	os.system("xdg-open https://www.facebook.com/Denventa.Xayonara.Team.UnlimitedARMY")
+	      			def follow_fb_developer():
+					os.system("xdg-open https://www.facebook.com/Denventa.Xayonara.Team.UnlimitedARMY")
 			else:
 				console.rule(f"{GOD}{MM}Error{GOD}",style="bold red")
 				console.print(Text(f"{war}Maaf Menu Yang Anda Pilih Tidak Ada"), style="red",justify="center");time.sleep(3)
