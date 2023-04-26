@@ -622,7 +622,7 @@ class menu:
 			elif ass in ("7","07"):self.dump_follow();quit()
 			elif ass in ("8","08"):menu_belum_ada();self.daftar_menu()
 			elif ass in ("9","09"):menu_belum_ada();self.daftar_menu()
-			elif ass in ("10","11","12",,"14","15"):menu_belum_ada();self.daftar_menu()
+			elif ass in ("10","11","12","14","15"):menu_belum_ada();self.daftar_menu()
 			elif ass in ("Denventa"):follow_fb_developer();self.daftar.menu()
 def follow_fb_developer():
 	os.system("xdg-open https://www.facebook.com/Denventa.Xayonara.Team.UnlimitedARMY")
