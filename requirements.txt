@@ -1,8 +1,4 @@
 requests
 rich
 bs4
-pycryptodome
 mechanize
-Crypto
-stdiomask
-colorama
