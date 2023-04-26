@@ -82,7 +82,7 @@ try:
 		null.close()
 		musik_="play"
 	except:musik_="error!!"
-	sys.stdout.write(f'\x1b[1;35m\x1b]2; ★ SCRIPT BY MR.RISKY ★\x07')
+	sys.stdout.write(f'\x1b[1;35m\x1b]2; Developer Script : Denventa\x07')
 	sys.path.append(os.path.realpath('.'))
 except requests.exceptions.ConnectionError:
 	print("* Perisak Jaringan Anda..!!");quit()
@@ -234,11 +234,11 @@ class folder:
 		try:
 			open(".data/user-baru.txt","r").read()
 		except:
-			open(".data/user-baru.txt","w").write("HALO-JIKA-ANDA-HAPUS-FILE-INI-ANDA-AKAN-MENAMPILKAN-PENGGUNA-BARU\nSALAM-DARI-RISKY")
-			text = Text(f"""Sepertinya Anda Pengguna Baru Dark Facebook, Terima Kasih Telah Menggunakan Sciprt Saya, Dan Terima Kasih Telah Mempercayai Saya, Saya Akan Mengasih Pengalaman Anda Untuk Crack Secara Masimal, SALAM DARI SAYA RISKY AND XTC•CODETEAM""")
-			text.highlight_words(["Pengguna Baru Dark Facebook"],"bold yellow")
+			open(".data/user-baru.txt","w").write("HALO-JIKA-ANDA-HAPUS-FILE-INI-ANDA-AKAN-MENAMPILKAN-PENGGUNA-BARU\nSALAM-DARI-[ Denventa ]")
+			text = Text(f"""Sepertinya Anda Pengguna Baru Script [ Dark Facebook ], Terima Kasih Telah Menggunakan Sciprt Saya, Dan Terima Kasih Telah Mempercayai Saya, Saya Akan Memberikan Pengalaman Kepada Anda Untuk Crack Secara Maksimal, Salam Dari Saya [ Denventa ] And XTC•CODETEAM""")
+			text.highlight_words(["Pengguna Baru Script [ Dark Facebook ]"],"bold yellow")
 			text.highlight_words(["Terima Kasih","Mempercayai Saya"], "bold green")
-			text.highlight_words(["RISKY","XTC•CODETEAM","Masimal"], "italic white")
+			text.highlight_words(["[ Denventa ]","XTC•CODETEAM","Maksimal"], "italic white")
 			console.rule("Information Pengguna Baru",style="red")
 			console.print(text, style="cyan", justify="center")
 def menu_belum_ada():
