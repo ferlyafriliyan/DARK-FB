@@ -953,17 +953,16 @@ class crack:
 				ugen.append(x)
 			ugen.append("Mozilla/5.0 (Linux; U; Android 9;  en-us; GT-B938Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.4441.75 Mobile Safari/537.36")
 		elif hu in ['5','05']:
-			  for xd in range(10000):
-                                   	a=random.choice(['1','1.0','1.5','2','2.0','2.5','3','3.0','3.5','4','4.0','4.5','5','5.0','5.5','6','6.0','6.5','7','7.0','7.5','8','8.0','8.5','9','9.0','9.5','10','10.0','10.5','11','11.0','11.5','12','12.0','12.5','13'])
-                                	a=random.choice(['1','1.0','1.5','2','2.0','2.5','3','3.0','3.5','4','4.0','4.5','5','5.0','5.5','6','6.0','6.5','7','7.0','7.5','8','8.0','8.5','9','9.0','9.5','10','10.0','10.5','11','11.0','11.5','12','12.0','12.5','13'])
-	                                c=random.randrange(73,100)
-                                  	d=random.randrange(4200,4900)
-                                 	e=random.randrange(40,150)
-                                  	afr=random.choice(['SAMSUNG SM-J210Y','SAMSUNG SM-E203Y','SAMSUNG SM-T87V','SAMSUNG SM-D738P','SAMSUNG SM-W748D','SAMSUNG SM-Z794M','SAMSUNG SM-K144T','SAMSUNG SM-L372N','SAMSUNG SM-B588T','SAMSUNG SM-R584V','SAMSUNG SM-R108Z'])
-	                                denv='Mozilla/5.0 (Linux; Android {a}; {afr}) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/14.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-	                                uaku = random.choice([denv])
-	                                ugen2.append(uaku)
-	
+			for xd in range(10000):                    
+	a=random.choice(['1','1.0','1.5','2','2.0','2.5','3','3.0','3.5','4','4.0','4.5','5','5.0','5.5','6','6.0','6.5','7','7.0','7.5','8','8.0','8.5','9','9.0','9.5','10','10.0','10.5','11','11.0','11.5','12','12.0','12.5','13'])
+        a=random.choice(['1','1.0','1.5','2','2.0','2.5','3','3.0','3.5','4','4.0','4.5','5','5.0','5.5','6','6.0','6.5','7','7.0','7.5','8','8.0','8.5','9','9.0','9.5','10','10.0','10.5','11','11.0','11.5','12','12.0','12.5','13'])                             
+	c=random.randrange(73,100)
+        d=random.randrange(4200,4900)
+        e=random.randrange(40,150)
+        afr=random.choice(['SAMSUNG SM-J210Y','SAMSUNG SM-E203Y','SAMSUNG SM-T87V','SAMSUNG SM-D738P','SAMSUNG SM-W748D','SAMSUNG SM-Z794M','SAMSUNG SM-K144T','SAMSUNG SM-L372N','SAMSUNG SM-B588T','SAMSUNG SM-R584V','SAMSUNG SM-R108Z'])
+	denv='Mozilla/5.0 (Linux; Android {a}; {afr}) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/14.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
+	uaku = random.choice([denv])
+	ugen2.append(uaku)
 	a=random.choice(['1','1.0','1.5','2','2.0','2.5','3','3.0','3.5','4','4.0','4.5','5','5.0','5.5','6','6.0','6.5','7','7.0','7.5','8','8.0','8.5','9','9.0','9.5','10','10.0','10.5','11','11.0','11.5','12','12.0','12.5','13'])
 	b=random.choice(['OPM1','TP1A','RP1A','PPR1','PKQ1','QP1A','SP1A','RKQ1'])
 	c=random.randrange(111111,210000)
@@ -1013,7 +1012,6 @@ class crack:
 	l='Mobile Safari/537.36 XiaoMi/Mint Browser/3.9.3 '
 	uakuh=f'{a} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	usragent.append(uakuh)
-	
 	a='Mozilla/5.0 (Linux; Android'
 	b=random.choice(['8.1.0','9','10','11','12','13'])
 	c='Nokia_X'
@@ -1025,7 +1023,6 @@ class crack:
 	i='Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/300.2.0.58.129;]'
 	uakuh=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
 	usragent.append(uakuh)
-
 	aa='Mozilla/5.0 (Linux; U; Android'
 	b=random.choice(['5.0','6.0','7.0','8.1.0','9','10','11','12'])
 	c=random.choice(['ASUS_Z01QD'])
@@ -1040,7 +1037,6 @@ class crack:
 	l='Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/381.0. 0.29.105;]'
 	uakuh=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	usragent.append(uakuh)
-	
 	aa='Mozilla/5.0 (Linux; Android'
 	b=random.choice(['6','7','8','9','10','11','12'])
 	c=(['S88Plus'])
@@ -1055,7 +1051,6 @@ class crack:
 	l='Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/396.1.0.28.104;]'
 	uakuh=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
 	usragent.append(uakuh)
-
 	aa='Mozilla/5.0 (Linux; Android'
 	b=random.choice(['5.0','6.0','7.0','8.1.0','9','10','11','12'])
 	c=random.choice(['SM-J610F'])
@@ -1070,7 +1065,6 @@ class crack:
 	l='Mobile Safari/537.36'
 	uakuh=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	usragent.append(uakuh)
-	
 	aa='Mozilla/5.0 (Linux; Android'
 	b=random.choice(['5.0','6.0','7.0','8.1.0','9','10','11','12'])
 	c=random.choice(['SM-A51 Pro'])
@@ -1085,7 +1079,6 @@ class crack:
 	l='Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/376.0.0.12 .108;]'
 	uakuh=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	usragent.append(uakuh)
-	
 	aa='Mozilla/5.0 (Linux; Android'
 	b=random.choice(['5.0','6.0','7.0','8.1.0','9','10','11','12'])
 	c=random.choice(['SGP712'])
@@ -1100,7 +1093,6 @@ class crack:
 	l='Safari/537.36 [FB_IAB/FB4A;FBAV/351.0 .0.38.117;]'
 	uakuh=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	usragent.append(uakuh)
-	
 	aa='Mozilla/5.0 (Linux; Android'
 	b=random.choice(['5.0','6.0','7.0','8.1.0','9','10','11','12'])
 	c=random.choice(['S98Pro'])
@@ -1115,7 +1107,6 @@ class crack:
 	l='Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/401.0.0.24. 77;]'
 	uakuh=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	usragent.append(uakuh)
-	
 	aa='Mozilla/5.0 (Linux; U; Android'
 	b=random.choice(['5.0','6.0','7.0','8.1.0','9','10','11','12'])
 	c=random.choice(['en-gb; CPH1909'])
@@ -1130,7 +1121,6 @@ class crack:
 	l='Mobile Safari/537.36 HeyTapBrowser/7.4.2beta'
 	uakuh=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	usragent.append(uakuh)
-	
 	aa='Mozilla/5.0 (Linux; U; Android'
 	b=random.choice(['5.0','6.0','7.0','8.1.0','9','10','11','12'])
 	c=random.choice(['SAMSUNG SM-A750G)'])
@@ -1145,7 +1135,6 @@ class crack:
 	l='Mobile Safari/537.36'
 	uakuh=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	usragent.append(uakuh)
-	
 	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
 	b=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
 	c=random.randrange(73,100)
@@ -1153,7 +1142,6 @@ class crack:
 	e=random.randrange(40,150)
 	uaku=f'Mozilla/5.0 (Linux; Android {a}; SAMSUNG SM-A305FN) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
 	ugen2.append(uaku)
-	
 	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
 	b=random.randrange(111111,210000)
 	c=random.randrange(73,100)
@@ -1165,7 +1153,6 @@ class crack:
 	Denventa_Af4=f'Mozilla/5.0 (Linux; Android {a}; SM-M317F Build/SP1A.{b}.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
 	uaku2 = random.choice([Denventa_Af1,Denventa_Af2,Denventa_Af3,Denventa_Af4])
 	ugen.append(uaku2)
-	
 	a='Mozilla/5.0 (Java; U; en-us; samsung-gt-s3850) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.6.0.199/69/444/UCWEB Mobile UNTRUSTED/1.0'
 	b=random.randrange(1, 9)
 	c=random.randrange(1, 9)
@@ -1179,8 +1166,6 @@ class crack:
 	k='Mobile UNTRUSTED/1.0'
 	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
 	ugen2.append(uaku)
-
-
 	aa='Mozilla/5.0 (Linux; U; Android 10; id-id; Redmi 9A Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36'
 	b=random.choice(['6','7','8','9','10','11','12'])
 	c='id-id;'
@@ -1195,8 +1180,6 @@ class crack:
 	l='Mobile Safari/537.36'
 	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen.append(uaku2)
-	
-	
 	aa='Mozilla/5.0 (Linux; Android 5.1.1;'
 	b=random.choice(['6','7','8','9','10','11','12'])
 	c='HUAWEI M2-A01W)'
