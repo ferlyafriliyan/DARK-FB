@@ -601,7 +601,7 @@ class menu:
 		tampilan_tools = f"""   {QQ}[{CC}10{QQ}] {PP}Check Options Akun CP
    {QQ}[{CC}11{QQ}] {PP}Check Jumlah Teman
    {QQ}[{CC}12{QQ}] {PP}Aktifkan Private Akun
-   {QQ}[{CC}Denventa{QQ}] {PP}Follow FB Developer"""
+   {QQ}[{CC}44{QQ}] {PP}Follow FB Developer"""
 		tampilan_lain = f"""   {QQ}[{CC}13{QQ}] {PP}Check Hasil Crack
    {QQ}[{CC}14{QQ}] {PP}Bot Komen
    {QQ}[{CC}15{QQ}] {PP}Bot Share
@@ -624,7 +624,7 @@ class menu:
 			elif ass in ("9","09"):menu_belum_ada();self.daftar_menu()
 			elif ass in ("10","11","12","14","15"):menu_belum_ada();self.daftar_menu()
 #			elif ass in ("",""):
-		        elif ass in ("Denventa","denventa","DENVENTA"):follow_fb_developer();self.daftar_menu()
+		        elif ass in ("44","044"):follow_fb_developer();self.daftar_menu()
 			elif ass in ("00","000"):quit()
 def follow_fb_developer():
 	os.system("xdg-open https://www.facebook.com/Denventa.Xayonara.Team.UnlimitedARMY")
