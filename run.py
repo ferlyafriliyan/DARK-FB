@@ -516,7 +516,7 @@ class login:
    {QQ}[{CC}03{QQ}]{CC} Login Dari Hasil Crack
    {QQ}[{MM}00{QQ}]{MM} EXIT"""
 		dumai.append(Panel(tampilan_login_free,width=42,title=f"{GOD}{UU}Menu Login{GOD}",style=f"{A}",subtitle_align='left',subtitle=f"┏{KK}SILAHKAN PILIH"))
-		dumai.append(Panel(tampilan_login_vvip,width=45,title=f"{GOD}{LOL}Menu Vvip{GOD}",style=f"{A}"))
+		dumai.append(Panel(tampilan_login_vvip,width=45,title=f"{GOD}{UU}Menu Vvip{GOD}",style=f"{A}"))
 		console.print(Columns(dumai))
 		jks = input(f"{a}   ┗{k}MENU : {a}")
 		if status_key == "Admin":
