@@ -507,10 +507,10 @@ class login:
 			else:LOL = HH
 		except:LOL = HH
 		dumai = []
-		tampilan_login_vvip = f"""   {QQ}[{LOL}04{QQ}]{LOL} Login Otomatis
-   {QQ}[{LOL}05{QQ}]{LOL} Crack ID OLD
-   {QQ}[{LOL}06{QQ}]{LOL} Crack Email
-   {QQ}[{LOL}07{QQ}]{LOL} Crack Group Facebook"""
+		tampilan_login_vvip = f"""   {QQ}[{II}04{QQ}]{LOL} Login Otomatis
+   {QQ}[{LOL}05{QQ}]{II} Crack ID OLD
+   {QQ}[{LOL}06{QQ}]{II} Crack Email
+   {QQ}[{LOL}07{QQ}]{II} Crack Group Facebook"""
 		tampilan_login_free = f"""   {QQ}[{CC}01{QQ}]{CC} Login Cookies
    {QQ}[{CC}02{QQ}]{CC} Login Username & Password
    {QQ}[{CC}03{QQ}]{CC} Login Dari Hasil Crack
