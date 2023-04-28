@@ -342,9 +342,9 @@ class logo:
 {MM}|    \ |  _  || __  ||  |  |  {QQ}|   __||  _  ||     ||   __|| __  ||     ||     ||  |  |
 {MM}|  |  ||     ||    -||    -|  {QQ}|   __||     ||   --||   __|| __ -||  |  ||  |  ||    -|
 {MM}|____/ |__|__||__|__||__|__|  {QQ}|__|   |__|__||_____||_____||_____||_____||_____||__|__|
-			   {QQ}Developer   : {II}Denventa             
-			   {QQ}My Github   : {II}github.com/Denventa  
-			   {QQ}My Facebook : {II}fb.com/Denventa.Xayonara.Team.UnlimitedARMY"""
+			 {QQ}Developer   : {II}Denventa             
+			 {QQ}Github      : {II}github.com/Denventa  
+			 {QQ}Facebook    : {II}Denventa Afriliyan Ferly Shishigami X"""
 		prints(Panel(my_logo,width=90,padding=0,style=xtc["warna"]["rich"],title=f"{QQ}•{II}•{MM}• {OO}XTC-CODETEAM {MM}•{II}•{QQ}•"))
 class login:
 	def __init__(self):
