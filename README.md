@@ -7,7 +7,7 @@ Welcome
   
 #### ★ Social Accounts ★
 <a href="https://www.facebook.com/Denventa.Xayonara.Team.UnlimitedARMY"><img src="https://raw.githubusercontent.com/Dumai-991/Dumai-991/main/Image/images.png" alt="alt text" width="75" height="75"></a>  
-# ✭ DARK-FB 
+# ✭ DARK-KACHYUSA 
 ### Multi Brute Force Facebook
   
 ### • - Made With [ Risky (Zero Two) ]
@@ -21,12 +21,12 @@ Welcome
 ### ⇨  Install Script Di Termux
 ```python
 termux-change-repo
-rm -rf $HOME/DARK-FB
+rm -rf $HOME/DARK-KACHYUSA
 pkg update && pkg upgrade -y
 pkg install python git -y
 pkg install python-pip
-git clone https://github.com/Denventa/DARK-FB
-cd DARK-FB
+git clone https://github.com/Denventa/DARK-KACHYUSA
+cd DARK-KACHYUSA
 git pull
 pip3 install -r requirements.txt
 ```
