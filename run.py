@@ -1,4 +1,10 @@
+# print ( ' __main__(bot_efbe) ' ):
+# print('Jangan Ganti Bot Cooment Gw')
+# print('Anggap Saja Sebagai Tanda Terima Kasih Karena Gw Udah Ngilangin Bagian Yang Error Di Script Ini')
+# print('  [ Denventa Afriliyan Ferly Shishigami X ]  ')
+
 #=======================================[IMPORT]=======================================#
+                 # print('  [ Denventa Afriliyan Ferly Shishigami X ]  ')
 try:
 	import sys,os
 	for x in range(10):
