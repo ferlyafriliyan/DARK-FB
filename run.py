@@ -373,8 +373,8 @@ class login:
 			self.menu_login()
 	def login_cookies(self):
 		cls();logo()
-		console.print(Panel(f"{MM}[{QQ}•{MM}] {QQ}Jangan Gunakan Akun Pribadi {MM}!, {MM}[{QQ}•{MM}] {QQ}Apabila Akun A2F On, Buka Link Dibawah {MM}[{QQ}•{MM}] {QQ}https://business.facebook.com/business_locations {MM}[{QQ}•{MM}] {QQ}Lalu Masukkan Kode Autentikasi",width=40,title=f"{GOD}{UU}Cookies{GOD}",style=f"{A}",subtitle_align='left',subtitle=f"┏{KK}Masukan Cookies"))
-		cookie = input(f"{a}   ┗{k}Masukkan Cookies : {a}")
+		console.print(Panel(f"{MM}[{QQ}•{MM}] {QQ}Jangan Gunakan Akun Pribadi {MM}!",width=40,title=f"{GOD}{UU}Login Cookies{GOD}",style=f"{A}",subtitle_align='left',subtitle=f"┏{KK}Masukan Cookies"))
+		cookie = input(f"{a}   ┗{k}Cookies : {a}")
 		token = self.ubah_cok(cookie)
 		if token in (""," "):
 			text = Text(f"{war}{m}Cookies Anda Error{q}({k}Invalid{q})")
