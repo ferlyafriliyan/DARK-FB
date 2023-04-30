@@ -509,26 +509,13 @@ class login:
 			else:LOL = HH
 		except:LOL = HH
 		dumai = []
-		tampilan_login_vvip = f"""   {QQ}[{II}04{QQ}]{II} Login Otomatis
-   {QQ}[{II}05{QQ}]{II} Crack ID OLD
-   {QQ}[{II}06{QQ}]{II} Crack Email
-   {QQ}[{II}07{QQ}]{II} Crack Group Facebook"""
 		tampilan_login_free = f"""   {QQ}[{CC}01{QQ}]{CC} Login Cookies
-   {QQ}[{CC}02{QQ}]{CC} Login Username & Password
-   {QQ}[{CC}03{QQ}]{CC} Login Dari Hasil Crack
-   {QQ}[{MM}00{QQ}]{MM} EXIT"""
+   {QQ}[{MM}00{QQ}]{MM} Keluar Dari Script"""
 		dumai.append(Panel(tampilan_login_free,width=42,title=f"{GOD}{UU}Menu Login{GOD}",style=f"{A}",subtitle_align='left',subtitle=f"┏{KK}SILAHKAN PILIH"))
-		dumai.append(Panel(tampilan_login_vvip,width=45,title=f"{GOD}{UU}Menu Vvip{GOD}",style=f"{A}"))
 		console.print(Columns(dumai))
 		jks = input(f"{a}   ┗{k}MENU : {a}")
 		if status_key == "Admin":
 			if jks in ("1","01"):self.login_cookies();quit()
-			elif jks in ("2","02"):menu_belum_ada();self.menu_login()
-			elif jks in ("3","03"):menu_belum_ada();self.menu_login()
-			elif jks in ("4","04"):self.login_otomatis();quit()
-			elif jks in ("5","05"):menu_belum_ada();self.menu_login()
-			elif jks in ("6","06"):menu().dump_email();quit()
-			elif jks in ("7","07"):menu_belum_ada();self.menu_login()
 	#		elif jks in ("",""):
 	#		elif jks in ("",""):
 			elif jks in ("00","000"):quit()
@@ -917,7 +904,7 @@ class crack:
 		rr = random.randint
 		tampilan_agen = f"""   {QQ}[{CC}01{QQ}] {PP}Android Browser 4
    {QQ}[{CC}02{QQ}] {PP} KFONWI
-   {QQ}[{CC}03{QQ}] {PP} All User-Agent Random
+   {QQ}[{CC}03{QQ}] {II} All User-Agent Random
 
    {QQ}[{CC}04{QQ}] {QQ}Manual
    {QQ}[{CC}05{QQ}] {QQ}Semua User-Agent"""
