@@ -21,12 +21,12 @@ Welcome
 ### ⇨  Install Script Di Termux
 ```python
 termux-change-repo
-rm -rf $HOME/DARK-KACHYUSA
+rm -rf $HOME/DARK-FB
 pkg update && pkg upgrade -y
 pkg install python git -y
 pkg install python-pip
-git clone https://github.com/Denventa/DARK-KACHYUSA
-cd DARK-KACHYUSA
+git clone https://github.com/Denventa/DARK-FB
+cd DARK-FB
 git pull
 pip3 install -r requirements.txt
 ```
