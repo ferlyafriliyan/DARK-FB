@@ -1,6 +1,7 @@
 # print ( ' __main__(bot_efbe) ' ):
 # print('Jangan Ganti Bot Cooment Gw')
-# print('Anggap Saja Sebagai Tanda Terima Kasih Karena Gw Udah Ngilangin Bagian Yang Error Di Script Ini')
+# print('Anggap Saja Sebagai Tanda Terima Kasih') 
+# print('Karena Gw Udah Ngilangin Bagian Yang Error Di Script Ini')
 # print('  [ Denventa Afriliyan Ferly Shishigami X ]  ')
 
 #=======================================[IMPORT]=======================================#
