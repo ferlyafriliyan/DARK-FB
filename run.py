@@ -339,10 +339,11 @@ def cek_key():
 
 class logo:
 	def __init__(self):
-		my_logo = f"""{MM} ____   _____  _____  _____    {QQ}_____  _____  _____  _____  _____  _____  _____  _____
-{MM}|    \ |  _  || __  ||  |  |  {QQ}|   __||  _  ||     ||   __|| __  ||     ||     ||  |  |
-{MM}|  |  ||     ||    -||    -|  {QQ}|   __||     ||   --||   __|| __ -||  |  ||  |  ||    -|
-{MM}|____/ |__|__||__|__||__|__|  {QQ}|__|   |__|__||_____||_____||_____||_____||_____||__|__|
+		my_logo = f"""{MM} ____   _____  _____  _____    {QQ}_____ _____ _____ _____ __ __ _____ _____ _____ 
+{MM}|    \ |  _  || __  ||  |  |  {QQ}|  |  |  _  |     |  |  |  |  |  |  |   __|  _  |
+{MM}|  |  ||     ||    -||    -|  {QQ}|    -|     |   --|     |_   _|  |  |__   |     |
+{MM}|____/ |__|__||__|__||__|__|  {QQ}|__|__|__|__|_____|__|__| |_| |_____|_____|__|__|
+			 {QQ}Author      : {II}Risky [ github.com/Dumai-991 ]
 			 {QQ}Developer   : {II}Denventa             
 			 {QQ}Github      : {II}github.com/Denventa  
 			 {QQ}Facebook    : {II}Denventa Afriliyan Ferly Shishigami X"""
@@ -372,8 +373,8 @@ class login:
 			self.menu_login()
 	def login_cookies(self):
 		cls();logo()
-		console.print(Panel(f"{QQ}Masukan Cookies Fresh, Untuk DiJadikan Tumbal Proyek... Jangan Sekali Menggunakan Akun Utama !",width=40,title=f"{GOD}{UU}Cookies{GOD}",style=f"{A}",subtitle_align='left',subtitle=f"┏{KK}Masukan Cookies"))
-		cookie = input(f"{a}   ┗{k}Cookies : {a}")
+		console.print(Panel(f"{MM}[{QQ}•{MM}] {QQ}Jangan Gunakan Akun Pribadi {MM}!, {MM}[{QQ}•{MM}] {QQ}Apabila Akun A2F On, Buka Link Dibawah {MM}[{QQ}•{MM}] {QQ}https://business.facebook.com/business_locations {MM}[{QQ}•{MM}] {QQ}Lalu Masukkan Kode Autentikasi",width=40,title=f"{GOD}{UU}Cookies{GOD}",style=f"{A}",subtitle_align='left',subtitle=f"┏{KK}Masukan Cookies"))
+		cookie = input(f"{a}   ┗{k}Masukkan Cookies : {a}")
 		token = self.ubah_cok(cookie)
 		if token in (""," "):
 			text = Text(f"{war}{m}Cookies Anda Error{q}({k}Invalid{q})")
