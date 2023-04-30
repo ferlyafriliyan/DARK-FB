@@ -58,7 +58,7 @@ try:
 	from bs4 import BeautifulSoup as parser
 	from bs4 import BeautifulSoup as par
 	from random import choice as pilih
-	from concurrent.futures import ThreadPoolExecutor as __Kiky__
+	from concurrent.futures import ThreadPoolExecutor as __Ferly__
 	from concurrent.futures import ThreadPoolExecutor
 	from requests.exceptions import ConnectionError
 	from datetime import datetime
@@ -1122,7 +1122,7 @@ class crack:
 		anim = Progress(SpinnerColumn("arrow2"),TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'))
 		anim2 = anim.add_task('',total=len(sos))
 		with anim:
-			with __Kiky__(max_workers=xtc["setting_crack"]["max-crack"]) as kontok:
+			with __Ferly__(max_workers=xtc["setting_crack"]["max-crack"]) as kontok:
 				for kocok in sos:
 					try:
 						userz = kocok.split('<=>')[0]
