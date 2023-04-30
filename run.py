@@ -562,7 +562,7 @@ class menu:
 {WOR} Your ID   : {KK}{id}{QQ}
 {WOR} Status    : {JJ}Premium 7 Days
 {WOR} Birthday  : {KK}{bd}
-{WOR} Login Date: {KK}{datetime.now().strftime('%A %d-%m-%Y')}""";api = requests.get('http://ip-api.com/json').json();time = f"""{WOR} iP        : {PP}{api['query']}
+{WOR} Login Date: {KK}{datetime.now().strftime('%A %d-%m-%Y')}""";api = requests.get('http://ip-api.com/json').json();time = f"""{WOR} IP        : {PP}{api['query']}
 {WOR} Country   : {KK}{api['country']}
 {WOR} City      : {KK}{api['city']}
 {WOR} Isp       : {KK}{api['isp']}
