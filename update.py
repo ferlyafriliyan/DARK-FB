@@ -4,16 +4,16 @@ import os,sys
 
 Denventa = """
 cd $HOME
-cd DARK-FB
+cd DARK-KACHYUSA
 mv data $HOME
 mv results $HOME
 cd
-rm -rf DARK-FB
-git clone https://github.com/Denventa/DARK-FB
+rm -rf DARK-KACHYUSA
+git clone https://github.com/Denventa/DARK-KACHYUSA
 cd $HOME
-mv data DARK-FB
-mv results DARK-FB
-cd DARK-FB
+mv data DARK-KACHYUSA
+mv results DARK-KACHYUSA
+cd DARK-KACHYUSA
 """
 
 print(" |-->Tunggu Sebentar Sedang Update Script....")
