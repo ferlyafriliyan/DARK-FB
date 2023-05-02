@@ -152,9 +152,10 @@ current = datetime.now()
 hari = current.day
 bulan_number = current.month
 nama_bulan= {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
-#bulan = nama_bulan[str(bulan_number)]
+bulan = nama_bulan
+bulan_2 = bulan_number
 tahun = current.year
-all_day=(f"{hari}-{tahun}")
+all_day=(f"{hari}-{bulan}-{bulan_2}-{tahun}")
 
 #""" WAKTU(JAM)"""
 detik = datetime.now().strftime('%H')
@@ -164,7 +165,7 @@ all_waktu=(f"{detik}-{menit}-{jam}")
 
 #""" GET VISITOR"""
 try:
-	visitor=request.urlopen("https://api.countapi.xyz/hit/denventa/dark-kachyusa")
+	visitor=request.urlopen("https://api.countapi.xyz/hit/denventa/dark-fb")
 	ka=json.loads(visitor.read())
 except:pass
 
@@ -372,9 +373,9 @@ class login:
 		try:
 			try:codeteam = json.loads(open(".data/sensi.json","r").read())
 			except:open(".data/sensi.json","w").write('{\n\t"token":"%s",\n\t"cookie":"%s",\n\t"nama":"KONTOL",\n\t"KEY":"Member"}'%("",""))
-			risky = requests.get('https://graph.facebook.com/me?fields=name,id,birthday&access_token='+codeteam["token"], cookies={'cookie':codeteam["cookie"]})
-			nama = json.loads(risky.text)['name']
-			id = json.loads(risky.text)['id']
+			ferly = requests.get('https://graph.facebook.com/me?fields=name,id,birthday&access_token='+codeteam["token"], cookies={'cookie':codeteam["cookie"]})
+			nama = json.loads(ferly.text)['name']
+			id = json.loads(ferly.text)['id']
 		except:
 			prints(Panel(f"""{WAR}COOKIES ANDA ERROR!""",title=f"{GOD}COOKIES{GOD}",width=90,style=xtc["warna"]["rich"]))
 #			os.remove(".data/sensi.json");time.sleep(3)
@@ -391,9 +392,9 @@ class login:
 			quit()
 		else:
 			try:
-				risky = requests.get('https://graph.facebook.com/me?fields=name,id,birthday&access_token='+token, cookies={'cookie':cookie})
-				nama = json.loads(risky.text)['name']
-				id = json.loads(risky.text)['id']
+				ferly = requests.get('https://graph.facebook.com/me?fields=name,id,birthday&access_token='+token, cookies={'cookie':cookie})
+				nama = json.loads(ferly.text)['name']
+				id = json.loads(ferly.text)['id']
 				text = Text(f"""{wor}{q}Nama Lengkap : {u}{nama}{q}\n{wor}Username/ID  : {u}{id}{q}\n{wor}{i}Token{q}        : {i}{token}{q}\n{wor}{c}Cookies{q}      : {c}{cookie}{q}""")
 				console.rule("Cookies DiTemukan",style="green")
 				console.print(text, style="green")
@@ -449,9 +450,9 @@ class login:
 			if token in (""," "):continue
 			else:
 				try:
-					risky = requests.get('https://graph.facebook.com/me?fields=name,id,birthday&access_token='+token, cookies={'cookie':cookie})
-					nama = json.loads(risky.text)['name']
-					id = json.loads(risky.text)['id']
+					ferly = requests.get('https://graph.facebook.com/me?fields=name,id,birthday&access_token='+token, cookies={'cookie':cookie})
+					nama = json.loads(ferly.text)['name']
+					id = json.loads(ferly.text)['id']
 					text = Text(f"""{wor}{q}Nama Lengkap : {u}{nama}{q}\n{wor}Username/ID  : {u}{id}{q}\n{wor}{i}Token{q}        : {i}{token}{q}\n{wor}{c}Cookies{q}      : {c}{cookie}{q}""")
 					console.rule("Cookies DiTemukan",style="green")
 					console.print(text, style="green")
@@ -525,7 +526,6 @@ class login:
 		if status_key == "Admin":
 			if jks in ("1","01"):self.login_cookies();quit()
 	#		elif jks in ("",""):
-	#		elif jks in ("",""):
 			elif jks in ("00","000"):quit()
 			else:
 				console.rule(f"{GOD}{MM}Error{GOD}",style="bold red")
@@ -593,10 +593,10 @@ class menu:
 			OQ = HH
 		try:ads = requests.get('https://www.facebook.com/adsmanager/manage/campaigns', cookies={'cookie':codeteam["cookie"]});url = requests.get('https://www.facebook.com/adsmanager/manage/campaigns?act='+ re.search('act=(.*?)&nav_source',str(ads.content)).group(1) +'&nav_source=no_referrer', cookies={'cookie':codeteam["cookie"]});mytok.append(re.search('accessToken="(.*?)"',str(url.content)).group(1))
 		except:exit('Failled Convert Cookie')
-		tampilan_menu = f"""   {QQ}[{CC}01{QQ}] {UU}Friendlist                 {QQ}[{CC}04{QQ}] {UU}ID Random           {QQ}[{CC}07{QQ}] {UU}Followers
+		tampilan_menu = f"""   {QQ}[{CC}01{QQ}] {UU}Friendlist                 {QQ}[{CC}04{QQ}] {UU}ID Public           {QQ}[{CC}07{QQ}] {UU}Followers
    {QQ}[{CC}02{QQ}] {AA}Nama                       {QQ}[{CC}05{QQ}] {UU}Email               {QQ}[{CC}08{QQ}] {AA}Grup
    {QQ}[{CC}03{QQ}] {AA}Komentar                   {QQ}[{CC}06{QQ}] {AA}Likers              {QQ}[{CC}09{QQ}] {AA}Hashtag"""
-		tampilan_tools = f"""   {QQ}[{CC}10{QQ}] {AA}Cek Opsi Akun CP
+		tampilan_tools = f"""   {QQ}[{CC}10{QQ}] {AA}Cek Opsi
    {QQ}[{CC}11{QQ}] {AA}Cek Teman
    {QQ}[{CC}12{QQ}] {AA}Cek Hasil
    {QQ}[{CC}00{QQ}] {PP}Keluar"""
@@ -670,7 +670,7 @@ class menu:
 			yz  = requests.Session().get('https://graph.facebook.com/%s?fields=name,id&access_token=%s'%("me",codeteam["token"]),cookies={"cookie":codeteam["cookie"]})
 			zxc = json.loads(yz.text)
 			nama= zxc["name"]
-		except:nama="UDIN"
+		except:nama="FERLY"
 		prints(Panel(f"{WOR}{OO}Nama Target :{PP}{nama}{QQ}\n{WOR}{OO}Limit ID    : {PP}{len(id)}{QQ}",width=100,padding=(0),style=f"{A}"))
 		if len(id)==0:os.sys.exit(f"{war}Maaf ID Yang Terkumpul Tidak Ada!!")
 		else:pass
