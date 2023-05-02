@@ -97,6 +97,7 @@ except requests.exceptions.ConnectionError:
 try:
 	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
 	open('.prox.txt','w').write(prox)
+###----------[ APPEND ]---------- ###
 redmi=[]
 ugent=[]
 ugen2=[]
