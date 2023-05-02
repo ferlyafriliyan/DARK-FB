@@ -82,8 +82,10 @@ try:
 	from inquirer.themes import Default
 	from concurrent.futures import ThreadPoolExecutor
 	from datetime import datetime
-	console = Console()
-	try:
+	console = Console()try:
+	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
+	open('.prox.txt','w').write(prox)
+	
 		null = open(os.devnull, "w")
 		insta = subprocess.call(["dpkg","-s","play-audio"],stdout=null,stderr=subprocess.STDOUT)
 		if insta !=0:os.system('pkg install play-audio -y &> /dev/null')
@@ -94,9 +96,7 @@ try:
 	sys.path.append(os.path.realpath('.'))
 except requests.exceptions.ConnectionError:
 	print("* Perisak Jaringan Anda..!!");quit()
-try:
-	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
-	open('.prox.txt','w').write(prox)
+	
 ###----------[ APPEND ]---------- ###
 mytok = []
 ###----------[ GENERATE USERAGENT ]---------- ###
