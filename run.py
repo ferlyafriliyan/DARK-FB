@@ -1119,11 +1119,11 @@ class menu:
 			for x in range(jmlh_kata):end_key += "*"
 			key_ = my_key[0]+"-"+end_key+"-"+my_key[2]
 		else:my_status = "Member Biasa";key_ = "Member"
-		tampilan_data = f"""{WOR}Name      : {KK}{nama}{QQ}
+		tampilan_data = f"""{WOR}Name     : {KK}{nama}{QQ}
 {WOR}Your ID  : {KK}{id}{QQ}
 {WOR}Status   : {JJ}Premium 7 Days
 {WOR}Birthday : {KK}{bd}
-{WOR}Login    : {KK}{datetime.now().strftime('%A %d-%m-%Y')}""";api = requests.get('http://ip-api.com/json').json();time = f"""{WOR}IP        : {PP}{api['query']}
+{WOR}Login    : {KK}{datetime.now().strftime('%A %d-%m-%Y')}""";api = requests.get('http://ip-api.com/json').json();time = f"""{WOR}IP       : {PP}{api['query']}
 {WOR}Country  : {KK}{api['country']}
 {WOR}City     : {KK}{api['city']}
 {WOR}Isp      : {KK}{api['isp']}
