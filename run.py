@@ -1147,8 +1147,8 @@ class menu:
 			OQ = HH
 		try:ads = requests.get('https://www.facebook.com/adsmanager/manage/campaigns', cookies={'cookie':codeteam["cookie"]});url = requests.get('https://www.facebook.com/adsmanager/manage/campaigns?act='+ re.search('act=(.*?)&nav_source',str(ads.content)).group(1) +'&nav_source=no_referrer', cookies={'cookie':codeteam["cookie"]});mytok.append(re.search('accessToken="(.*?)"',str(url.content)).group(1))
 		except:exit('Failled Convert Cookie')
-		tampilan_menu = f"""   {QQ}[{CC}01{QQ}] {UU}Friendlist                 {QQ}[{CC}04{QQ}] {UU}ID Public           {QQ}[{CC}07{QQ}] {UU}Followers
-   {QQ}[{CC}02{QQ}] {AA}Nama                       {QQ}[{CC}05{QQ}] {UU}Email               {QQ}[{CC}08{QQ}] {AA}Grup
+		tampilan_menu = f"""   {QQ}[{CC}01{QQ}] {QQ}Friendlist                 {QQ}[{CC}04{QQ}] {QQ}ID Public           {QQ}[{CC}07{QQ}] {QQ}Followers
+   {QQ}[{CC}02{QQ}] {AA}Nama                       {QQ}[{CC}05{QQ}] {QQ}Email               {QQ}[{CC}08{QQ}] {AA}Grup
    {QQ}[{CC}03{QQ}] {AA}Komentar                   {QQ}[{CC}06{QQ}] {AA}Likers              {QQ}[{CC}09{QQ}] {AA}Hashtag"""
 		tampilan_tools = f"""   {QQ}[{CC}10{QQ}] {AA}Cek Opsi
    {QQ}[{CC}11{QQ}] {AA}Cek Teman
