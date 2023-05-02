@@ -147,7 +147,7 @@ k2="\033[43m"
 garis="\033[4m\033[3m"
 jarak=(f"────────────────────────────────────────────────────────────────────────────────────────{q}")
 #=======================================[GLOBAL-TEXT]==================================#
-#""" TANGGAL"""
+###----------[ TIME ]---------- ###
 current = datetime.now()
 hari = current.day
 bulan_number = current.month
@@ -156,13 +156,12 @@ nama_bulan= {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "0
 tahun = current.year
 all_day=(f"{hari}--{tahun}")
 
-#""" WAKTU(JAM)"""
 detik = datetime.now().strftime('%H')
 menit = datetime.now().strftime('%M')
 jam = datetime.now().strftime('%S')
 all_waktu=(f"{detik}-{menit}-{jam}")
 
-#""" GET VISITOR"""
+###----------[ GET VISITOR ]---------- ###
 try:
 	visitor=request.urlopen("https://api.countapi.xyz/hit/denventa/dark-fb")
 	ka=json.loads(visitor.read())
