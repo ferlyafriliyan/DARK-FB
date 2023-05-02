@@ -152,10 +152,9 @@ current = datetime.now()
 hari = current.day
 bulan_number = current.month
 nama_bulan= {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
-bulan = nama_bulan
-bulan_2 = bulan_number
+#bulan = nama_bulan[str(bulan_number)]
 tahun = current.year
-all_day=(f"{hari}-{bulan}-{bulan_2}-{tahun}")
+all_day=(f"{hari}--{tahun}")
 
 #""" WAKTU(JAM)"""
 detik = datetime.now().strftime('%H')
