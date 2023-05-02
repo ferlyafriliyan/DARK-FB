@@ -900,6 +900,76 @@ class crack:
 			'https://api.proxyscrape.com/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all'
 			'https://raw.githubusercontent.com/Denventa/sakera/main/ua.txt'
 			]
+		try:
+#			for link in link_prox:
+			for link in link_proxz:
+				try:
+					all_prox = requests.get(link).text
+					open(".data/proxy.txt","a+").write(all_prox)
+				except:continue
+		except:pass
+	def user_agnrt(self):
+		rr = random.randint
+		tampilan_agen = f"""   {QQ}[{CC}01{QQ}] {PP}Android Browser 4
+   {QQ}[{CC}02{QQ}] {PP} KFONWI
+   {QQ}[{CC}03{QQ}] {PP} All User-Agent Random
+   {QQ}[{CC}04{QQ}] {QQ}Manual
+   {QQ}[{CC}05{QQ}] {QQ}Semua User-Agent"""
+		prints(Panel(tampilan_agen,title=f"{GOD}{PP}Pilih Bentuk User-Agent{GOD}",width=100,padding=(0),style=f"{A}",subtitle_align='left',subtitle=f"┏SILAHKAN PILIH"))
+		hu = input(f"{a}   ┗{c}PILIH : {a}")
+		if hu in ['1','01']:
+			for x in range(10000):
+				_='Mozilla/5.0 (Linux; U; Android'
+				__=random.choice(['6','7','8','9','10','11','12'])
+				___=' en-us; GT-'
+				____=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+				_____=random.randrange(1, 999)
+				______=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+				_______='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+				________=random.randrange(73,100)
+				_________=random.randrange(4200,4900)
+				__________=random.randrange(40,150)
+				___________='Mobile Safari/537.36'
+				ugen.append(f'{_} {__}; {___}{____}{_____}{______}) {_______}{________}.0.{_________}.{__________} {___________}')
+		elif hu in ['2','02']:
+			for x in range(10000):
+				ugen.append(f"Mozilla/5.0 (Linux; Android 9; KFONWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/{str(rr(111,999))}.{str(rr(1,9))}.{str(rr(1,99))} like Chrome/{str(rr(111,999))}.0.{str(rr(1111,9999))}.{str(rr(111,999))} Safari/537.36")
+
+
+		elif hu in ['3','03']:
+			zz = requests.get("https://raw.githubusercontent.com/ChangzFB/User-Agent/main/Chang.txt").text
+			for x in zz.splitlines():
+				ugen.append(x)
+
+
+		elif hu in ['4','04']:
+			prints(Panel(f"{WAR}{KK}Masukan User-Agent Minimal Tiga Puluh(30 Kata) Huruf\n{WAR}{KK}Gunakan Symbol | Untuk Pemisah",width=100,padding=(0),style=f"{A}",subtitle_align='left',subtitle=f"┏MASUKAN AGENT"))
+			ua_z = input(f"{a}   ┗{c}UserAgent : {a}").split("|")
+			for x in ua_z:
+				ugen.append(x)
+			ugen.append("Mozilla/5.0 (Linux; U; Android 9;  en-us; GT-B938Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.4441.75 Mobile Safari/537.36")
+		elif hu in ['5','05']:
+			for x in range(10000):
+				ugen.append(f"Mozilla/5.0 (Linux; Android 9; KFONWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/{str(rr(111,999))}.{str(rr(1,9))}.{str(rr(1,99))} like Chrome/{str(rr(111,999))}.0.{str(rr(1111,9999))}.{str(rr(111,999))} Safari/537.36")
+				_='Mozilla/5.0 (Linux; U; Android'
+				__=random.choice(['6','7','8','9','10','11','12'])
+				___=' en-us; GT-'
+				____=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+				_____=random.randrange(1, 999)
+				______=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+				_______='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+				________=random.randrange(73,100)
+				_________=random.randrange(4200,4900)
+				__________=random.randrange(40,150)
+				___________='Mobile Safari/537.36'
+				ugen.append(f'{_} {__}; {___}{____}{_____}{______}) {_______}{________}.0.{_________}.{__________} {___________}')
+		else:
+			console.rule(f"{GOD}{MM}Error{GOD}",style="bold red")
+			console.print(Text(f"{war}Maaf Menu Yang Anda Pilih Tidak Ada"), style="red",justify="center");time.sleep(3)
+			self.user_agnrt()
+
+
+
 	def susun_proses(self):
 		self.pilih_katasandi()
 		self.pasang_bot_follow()
@@ -913,7 +983,6 @@ class crack:
 		tampilan_pass = f"""   {QQ}[{CC}01{QQ}] {PP}Name {QQ}•{PP} Name+123 {QQ}•{PP} Name+12345
    {QQ}[{CC}02{QQ}] {PP}Name {QQ}•{PP} Name+123 {QQ}•{PP} Name+1234 {QQ}•{PP} Name+12345
    {QQ}[{CC}03{QQ}] {PP}Name {QQ}•{PP} Name+123 {QQ}•{PP} Name+1234 {QQ}•{PP} Name+12345 {QQ}•{PP} Nama Lengkap
-
    {QQ}[{CC}04{QQ}] {QQ}Manual"""
 		prints(Panel(tampilan_pass,title=f"{GOD}{PP}Pilih Bentuk Password{GOD}",width=100,padding=(0),style=f"{A}",subtitle_align='left',subtitle=f"┏SILAHKAN PILIH"))
 		hu = input(f"{a}   ┗{c}PILIH : {a}")
