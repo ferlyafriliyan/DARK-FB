@@ -82,7 +82,8 @@ try:
 	from inquirer.themes import Default
 	from concurrent.futures import ThreadPoolExecutor
 	from datetime import datetime
-	console = Console()try:
+	console = Console()
+try:
 	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
 	open('.prox.txt','w').write(prox)
 	
