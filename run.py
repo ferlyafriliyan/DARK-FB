@@ -101,6 +101,10 @@ except requests.exceptions.ConnectionError:
 	
 ###----------[ APPEND ]---------- ###
 mytok = []
+ugent = []
+ugen = []
+usam = []
+ugen2 = []
 ###----------[ GENERATE USERAGENT ]---------- ###
 for xd in range(10000) :
 	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
