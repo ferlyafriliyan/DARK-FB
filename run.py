@@ -96,7 +96,7 @@ except requests.exceptions.ConnectionError:
 	print("* Perisak Jaringan Anda..!!");quit()
 
 mytok = []
-#"""WARNA RICH"""
+###----------[ ANSII COLOR STYLE & RICH COLOR STYLE ]---------- ###
 H = "#000000" # Hitam
 M = "#FF0000" # Merah
 I = "#00FF00" # Hijau
@@ -122,7 +122,7 @@ JJ = "[#FF8F00]" # Jingga
 AA = "[#AAAAAA]" # Abu-Abu
 OO = "[#FFA500]" # OREN
 
-#""" WARNA UNTUK PRINT"""
+###----------[ COLOR FOR PRINT ]---------- ###
 q='\x1b[0m'	 # WARNA MATI
 p = '\x1b[0;97m' # PUTIH
 m = '\x1b[0;91m' # MERAH
