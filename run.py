@@ -1147,20 +1147,20 @@ class menu:
 			OQ = HH
 		try:ads = requests.get('https://www.facebook.com/adsmanager/manage/campaigns', cookies={'cookie':codeteam["cookie"]});url = requests.get('https://www.facebook.com/adsmanager/manage/campaigns?act='+ re.search('act=(.*?)&nav_source',str(ads.content)).group(1) +'&nav_source=no_referrer', cookies={'cookie':codeteam["cookie"]});mytok.append(re.search('accessToken="(.*?)"',str(url.content)).group(1))
 		except:exit('Failled Convert Cookie')
-		tampilan_menu = f"""   {QQ}[{CC}01{QQ}] {QQ}Friendlist                 {QQ}[{CC}04{QQ}] {QQ}ID Public           {QQ}[{CC}07{QQ}] {QQ}Followers
-   {QQ}[{CC}02{QQ}] {AA}Nama                       {QQ}[{CC}05{QQ}] {QQ}Email               {QQ}[{CC}08{QQ}] {AA}Grup
-   {QQ}[{CC}03{QQ}] {AA}Komentar                   {QQ}[{CC}06{QQ}] {AA}Likers              {QQ}[{CC}09{QQ}] {AA}Hashtag"""
-		tampilan_tools = f"""   {QQ}[{CC}10{QQ}] {AA}Cek Opsi
-   {QQ}[{CC}11{QQ}] {AA}Cek Teman
-   {QQ}[{CC}12{QQ}] {AA}Cek Hasil
-   {QQ}[{CC}00{QQ}] {PP}Keluar"""
-		tampilan_lain = f"""   {QQ}[{CC}13{QQ}] {AA}FB Developer
-   {QQ}[{CC}14{QQ}] {AA}Bot Komen
-   {QQ}[{CC}15{QQ}] {AA}Bot Share
-   {QQ}[{MM}00{QQ}] {QQ}Keluar"""
-		torop_.append(Panel(tampilan_menu,width=90,title=f"{GOD}{OO}Menu{GOD}",style=f"{A}"))
-		torop.append(Panel(tampilan_tools,width=45,title=f"{GOD}{CC}Tools{GOD}",style=f"{A}",subtitle_align='left',subtitle=f"┏{KK}SILAHKAN PILIH"))
-		torop.append(Panel(tampilan_lain,width=42,title=f"{GOD}{MM}Menu Lain{GOD}",style=f"{A}"))
+		tampilan_menu = f"""   {II}[{AA}01{II}] {QQ}Friendlist                 {II}[{AA}04{II}] {QQ}ID Public           {II}[{AA}07{II}] {QQ}Followers
+   {II}[{AA}02{II}] {AA}Nama                       {II}[{CC}05{II}] {QQ}Email               {II}[{AA}08{II}] {AA}Grup
+   {II}[{AA}03{II}] {AA}Komentar                   {II}[{CC}06{II}] {AA}Likers              {II}[{AA}09{II}] {AA}Hashtag"""
+		tampilan_tools = f"""   {II}[{AA}10{II}] {AA}Cek Opsi
+   {II}[{AA}11{II}] {AA}Cek Teman
+   {II}[{AA}12{II}] {AA}Cek Hasil
+   {II}[{MM}00{II}] {CC}Keluar"""
+		tampilan_lain = f"""   {II}[{AA}13{II}] {AA}FB Developer
+   {II}[{AA}14{II}] {AA}Bot Komen
+   {II}[{AA}15{II}] {AA}Bot Share
+   {II}[{MM}00{II}] {CC}Keluar"""
+		torop_.append(Panel(tampilan_menu,width=90,title=f"{GOD}{II}Menu{GOD}",style=f"{A}"))
+		torop.append(Panel(tampilan_tools,width=45,title=f"{GOD}{II}Tools{GOD}",style=f"{A}",subtitle_align='left',subtitle=f"┏{KK}SILAHKAN PILIH"))
+		torop.append(Panel(tampilan_lain,width=42,title=f"{GOD}{II}Menu Lain{GOD}",style=f"{A}"))
 		console.print(Columns(torop_))
 		console.print(Columns(torop))
 		ass = input(f"{a}   ┗{k}MENU : {a}")
