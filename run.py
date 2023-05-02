@@ -83,9 +83,10 @@ try:
 	from concurrent.futures import ThreadPoolExecutor
 	from datetime import datetime
 	console = Console()
-try:
-	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
-	open('.prox.txt','w').write(prox)
+	
+	try:
+		prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
+		open('.prox.txt','w').write(prox)
 	
 		null = open(os.devnull, "w")
 		insta = subprocess.call(["dpkg","-s","play-audio"],stdout=null,stderr=subprocess.STDOUT)
