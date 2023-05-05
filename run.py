@@ -844,14 +844,17 @@ class folder:
 			text.highlight_words(["[ Denventa ]","XAYONARA•CODETEAM","Maksimal"], "italic white")
 			console.rule("Information Pengguna Baru",style="red")
 			console.print(text, style="cyan", justify="center")
-def not_available():
-	text = Text(f"""{QQ}Mohon Maaf, Fitur {konten} Belum Tersedia Untuk Saat Ini. Tunggu Update Selanjutnya Untuk Menggunakan Fitur-Fitur Yang Akan Datang. Terima Kasih.\n\n                {MM}- Denventa -""")
+def menu_belum_ada():
+	text = Text(f"""Sepertinya Menu Yang Anda Pilih Masih Tahap Perkembangan (Belum Tersedia)\nMohon Kerja Samanya....""")
+	text.highlight_words(["Mohon Kerja Samanya"], "bold green")
+	text.highlight_words(["Belum Tersedia"], "bold red")
 	console.rule("Information Menu",style="red")
 	console.print(text, style="cyan", justify="center")
 	time.sleep(3)
 
 def quit():
-	os.system('rm -rf .token.txt && rm -rf .cookie.txt')
+	exit()
+	os.sys.exit()
 	quit()
 codeteam = ""
 def globalz():
@@ -1450,6 +1453,7 @@ class crack:
 			"https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks5.txt"
 			'https://api.proxyscrape.com/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all'
 			'https://raw.githubusercontent.com/Denventa/sakera/main/ua.txt'
+			'https://raw.githubusercontent.com/Denventa/DARK-FB/main/ua.txt'
 			]
 		try:
 #			for link in link_prox:
@@ -1470,7 +1474,7 @@ class crack:
 			for x in zz.splitlines():
 				ugen.append(x)
 				
-		elif hu in ['4','02']:
+		elif hu in ['2','02']:
 			prints(Panel(f"{WAR}{KK}Masukan User-Agent Minimal Tiga Puluh(30 Kata) Huruf\n{WAR}{KK}Gunakan Symbol | Untuk Pemisah",width=100,padding=(0),style=f"{A}",subtitle_align='left',subtitle=f"┏MASUKAN AGENT"))
 			ua_z = input(f"{a}   ┗{i}UserAgent : {a}").split("|")
 			for x in ua_z:
@@ -1579,9 +1583,9 @@ class crack:
 
 	def mentod(self):
 		global method
-		tampilan_mentod = f"""   {QQ}[{CC}01{QQ}] {PP}Name {QQ}•{PP} Name+123 {QQ}•{PP} Name+12345
-   {QQ}[{CC}02{QQ}] {PP}Name {QQ}•{PP} Name+123 {QQ}•{PP} Name+1234 {QQ}•{PP} Name+12345
-   {QQ}[{CC}03{QQ}] {PP}Name {QQ}•{PP} Name+123 {QQ}•{PP} Name+1234 {QQ}•{PP} Name+12345 {QQ}•{PP} Nama Lengkap
+		tampilan_mentod = f"""   {QQ}[{CC}01{QQ}] {PP}Method 1
+   {QQ}[{CC}02{QQ}] {PP}Method 2
+   {QQ}[{CC}03{QQ}] {PP}Method 3
    {QQ}[{CC}04{QQ}] {PP}Method 4
    {QQ}[{CC}05{QQ}] {PP}All Method"""
 		prints(Panel(tampilan_mentod,title=f"{GOD}{PP}Pilih Bentuk Password{GOD}",width=100,padding=(0),style=f"{A}",subtitle_align='left',subtitle=f"┏SILAHKAN PILIH"))
