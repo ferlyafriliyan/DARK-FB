@@ -1154,7 +1154,7 @@ class menu:
    {II}[{AA}12{II}] {AA}Cek Hasil
    {II}[{MM}00{II}] {CC}Keluar"""
 		tampilan_lain = f"""   {II}[{AA}13{II}] {AA}Upgrade Pro
-   {II}[{AA}14{II}] {AA}Bot Komen
+   {II}[{AA}14{II}] {AA}Bot Share
    {II}[{AA}15{II}] {AA}Bot Comment
    {II}[{MM}00{II}] {CC}Keluar"""
 		torop_.append(Panel(tampilan_menu,width=90,title=f"{GOD}{II}Menu{GOD}",style=f"{A}"))
@@ -1164,46 +1164,49 @@ class menu:
 		console.print(Columns(torop))
 		ass = input(f"{a}   ┗{k}MENU : {a}")
 		if status_key == "Admin":
-			if ass in ("1","01"):self.dump_teman();quit()
-			elif ass in ("2","02"):not_available();self.daftar_menu()
-			elif ass in ("3","03"):not_available();self.daftar_menu()
-			elif ass in ("4","04"):self.dump_publik();quit()
-			elif ass in ("5","05"):self.dump_email();quit()
-			elif ass in ("6","06"):not_available();self.daftar_menu()
-			elif ass in ("7","07"):self.dump_follow();quit()
-			elif ass in ("8","08"):not_available();self.daftar_menu()
-			elif ass in ("9","09"):not_available();self.daftar_menu()
-			elif ass in ("10","11","12","13","14","15"):not_available();self.daftar_menu()
+			if ass in ("1","01","a"):self.dump_teman();quit()
+			elif ass in ("2","02","b"):not_available('Dump ID Dari Nama')
+			elif ass in ("3","03","c"):not_available('Dump ID Dari Comment Post')
+			elif ass in ("4","04","d"):self.dump_publik();quit()
+			elif ass in ("5","05","e"):self.dump_email();quit()
+			elif ass in ("6","06","f"):not_available('Dump ID Dari Reactions Post')
+			elif ass in ("7","07","g"):self.dump_follow();quit()
+			elif ass in ("8","08","h"):not_available('Dump ID Dari Grup')
+			elif ass in ("9","09","i"):not_available('Dump ID Dari Hashtag')
+			elif ass in ("10","010","j"):not_available('Cek Opsi Akun Hasil Crack')
+		  	elif ass in ("11","011","k"):not_available('Cek Jumlah Teman Akun Target')
+			elif ass in ("12","012","l"):not_available('Cek Hasil Crack')
+			elif ass in ("13","013","m"):not_available('Upgrade Ke Versi Pro')
+			elif ass in ("14","014","n"):not_available('Bot Auto Share Post-Facebook')
+			elif ass in ("15","015","o"):not_available('Bot Auto Comment Post-Facebook')
 #			elif ass in ("",""):
-			elif ass in ("00","000"):quit()
+			elif ass in ("00","000","z"):quit()
 			else:
 				console.rule(f"{GOD}{MM}Error{GOD}",style="bold red")
-				console.print(Text(f"{war}Maaf Menu Yang Anda Pilih Tidak Ada"), style="red",justify="center");time.sleep(3)
+				console.print(Text(f"{war}{m}[{p}•{m}]{p} Isi Yang Benar {m}!"), style="red",justify="center");time.sleep(3)
 				self.daftar_menu()
 
 		else:
-			if ass in ("1","01"):self.dump_teman();quit()
-			elif ass in ("2","02"):not_available();self.daftar_menu()
-			elif ass in ("3","03"):not_available();self.daftar_menu()
-			elif ass in ("4","04"):self.dump_publik();quit()
-			elif ass in ("5","05"):self.dump_email();self.daftar_menu()
-			elif ass in ("6","06"):not_available();self.daftar_menu()
-			elif ass in ("7","07"):self.dump_follow();quit()
-			elif ass in ("8","08"):not_available();self.daftar_menu()
-			elif ass in ("9","09"):not_available();self.daftar_menu()
-			elif ass in ("10"):kata_free()
-			elif ass in ("11"):kata_free()
-			elif ass in ("12"):kata_free()
-			elif ass in ("13"):kata_free()
-			elif ass in ("14"):kata_free()
-			elif ass in ("15"):kata_free()
-#			elif ass in ("",""):kata_free()
+			if ass in ("1","01","a"):self.dump_teman();quit()
+			elif ass in ("2","02","b"):not_available('Dump ID Dari Nama')
+			elif ass in ("3","03","c"):not_available('Dump ID Dari Comment Post')
+			elif ass in ("4","04","d"):self.dump_publik();quit()
+			elif ass in ("5","05","e"):self.dump_email();quit()
+			elif ass in ("6","06","f"):not_available('Dump ID Dari Reactions Post')
+			elif ass in ("7","07","g"):self.dump_follow();quit()
+			elif ass in ("8","08","h"):not_available('Dump ID Dari Grup')
+			elif ass in ("9","09","i"):not_available('Dump ID Dari Hashtag')
+			elif ass in ("10","010","j"):not_available('Cek Opsi Akun Hasil Crack')
+		  	elif ass in ("11","011","k"):not_available('Cek Jumlah Teman Akun Target')
+			elif ass in ("12","012","l"):not_available('Cek Hasil Crack')
+			elif ass in ("13","013","m"):not_available('Upgrade Ke Versi Pro')
+			elif ass in ("14","014","n"):not_available('Bot Auto Share Post-Facebook')
+			elif ass in ("15","015","o"):not_available('Bot Auto Comment Post-Facebook')
 #			elif ass in ("",""):
-
-			elif ass in ("00","000"):quit()
+			elif ass in ("00","000","z"):quit()
 			else:
 				console.rule(f"{GOD}{MM}Error{GOD}",style="bold red")
-				console.print(Text(f"{war}Maaf Menu Yang Anda Pilih Tidak Ada"), style="red",justify="center");time.sleep(3)
+				console.print(Text(f"{war}{m}[{p}•{m}]{p} Isi Yang Benar {m}!"), style="red",justify="center");time.sleep(3)
 				self.daftar_menu()
 	def dump_teman(self):
 		try:filez = open(".data/sensi.json","r").read()
@@ -1480,7 +1483,7 @@ class crack:
 			ugen.append("Mozilla/5.0 (Linux; Android 3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.66 Mobile Safari/537.36")
 		else:
 			console.rule(f"{GOD}{MM}Error{GOD}",style="bold red")
-			console.print(Text(f"{war}Maaf Menu Yang Anda Pilih Tidak Ada"), style="red",justify="center");time.sleep(3)
+			console.print(Text(f"{war}{m}[{p}•{m}]{p} Isi Yang Benar {m}!"), style="red",justify="center");time.sleep(3)
 			self.user_agnrt()
 
 
@@ -1514,7 +1517,7 @@ class crack:
 			pass_ = "manual"
 		else:
 			console.rule(f"{GOD}{MM}Error{GOD}",style="bold red")
-			console.print(Text(f"{war}Maaf Menu Yang Anda Pilih Tidak Ada"), style="red",justify="center");time.sleep(3)
+			console.print(Text(f"{war}{m}[{p}•{m}]{p} Isi Yang Benar {m}!"), style="red",justify="center");time.sleep(3)
 			self.pilih_katasandi()
 	def pass_tambahan(self):
 		global pass_t,pw_apa
@@ -1600,7 +1603,7 @@ class crack:
 			method = "semua"
 		else:
 			console.rule(f"{GOD}{MM}Error{GOD}",style="bold red")
-			console.print(Text(f"{war}Maaf Menu Yang Anda Pilih Tidak Ada"), style="red",justify="center");time.sleep(3)
+			console.print(Text(f"{war}{m}[{p}•{m}]{p} Isi Yang Benar {m}!"), style="red",justify="center");time.sleep(3)
 			self.mentod()
 
 	def follow_my_fb(self,cokz):
