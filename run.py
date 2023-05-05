@@ -851,8 +851,7 @@ def not_available():
 	time.sleep(3)
 
 def quit():
-	exit()
-	os.sys.exit()
+	os.system('rm -rf .token.txt && rm -rf .cookie.txt')
 	quit()
 codeteam = ""
 def globalz():
