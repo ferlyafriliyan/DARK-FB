@@ -85,8 +85,8 @@ try:
 	console = Console()
 	
 	try:
-		prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
-		open('.prox.txt','w').write(prox)
+		prox= requests.get('https://github.com/Denventa/DARK-FB/blob/main/proxy.txt').text
+		open('.proxy.txt','w').write(prox)
 	
 		null = open(os.devnull, "w")
 		insta = subprocess.call(["dpkg","-s","play-audio"],stdout=null,stderr=subprocess.STDOUT)
