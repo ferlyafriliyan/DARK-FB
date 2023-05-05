@@ -1466,7 +1466,7 @@ class crack:
 		prints(Panel(tampilan_agen,title=f"{GOD}{PP}Pilih Bentuk User-Agent{GOD}",width=100,padding=(0),style=f"{A}",subtitle_align='left',subtitle=f"┏SILAHKAN PILIH"))
 		hu = input(f"{a}   ┗{i}PILIH : {a}")
 		if hu in ['1','01']:
-			zz = requests.get("https://raw.githubusercontent.com/ChangzFB/User-Agent/main/Chang.txt").text
+			zz = requests.get("https://raw.githubusercontent.com/Denventa/DARK-FB/main/ua.txt").text
 			for x in zz.splitlines():
 				ugen.append(x)
 				
