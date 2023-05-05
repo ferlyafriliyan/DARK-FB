@@ -931,7 +931,7 @@ class logo:
 {MM}|    \ |  _  || __  ||  |  |  {QQ}|   __||  _  ||     ||   __|| __  ||     ||     ||  |  |
 {MM}|  |  ||     ||    -||    -|  {QQ}|   __||     ||   --||   __|| __ -||  |  ||  |  ||    -|
 {MM}|____/ |__|__||__|__||__|__|  {QQ}|__|   |__|__||_____||_____||_____||_____||_____||__|__|
-                         {GOD} Informations Author [ And ] Developer {GOD}
+                    {GOD} Informations Author [ And ] Developer {GOD}                    
 {WOR} Author    {AA}: {II}Risky [ Dumai-991 ]
 {WOR} Developer {AA}: {II}A-Haganezuka [ Denventa ]
 {WOR} Update By {AA}: {II}Afriliyan Haganezuka & Merch Elz
