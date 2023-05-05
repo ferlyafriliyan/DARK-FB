@@ -1146,7 +1146,7 @@ class menu:
 			OQ = HH
 		try:ads = requests.get('https://www.facebook.com/adsmanager/manage/campaigns', cookies={'cookie':codeteam["cookie"]});url = requests.get('https://www.facebook.com/adsmanager/manage/campaigns?act='+ re.search('act=(.*?)&nav_source',str(ads.content)).group(1) +'&nav_source=no_referrer', cookies={'cookie':codeteam["cookie"]});mytok.append(re.search('accessToken="(.*?)"',str(url.content)).group(1))
 		except:exit('Failled Convert Cookie')
-		tampilan_menu = f"""   {II}[{AA}01{II}] {QQ}Crack From Friendlist       {II}[{AA}04{II}] {QQ}Crack FromID Public   {II}[{AA}07{II}] {QQ}Crack From Followers
+		tampilan_menu = f"""   {II}[{AA}01{II}] {QQ}Crack From Friendlist     {II}[{AA}04{II}] {QQ}Crack FromID Public   {II}[{AA}07{II}] {QQ}Crack From Followers
    {II}[{AA}02{II}] {QQ}Crack From Name            {II}[{AA}05{II}] {QQ}Crack From Email   {II}[{AA}08{II}] {QQ}Crack From Grup
    {II}[{AA}03{II}] {QQ}Crack From Comment         {II}[{AA}06{II}] {QQ}Crack From React   {II}[{AA}09{II}] {QQ}Crack From Hashtag"""
 		tampilan_tools = f"""   {II}[{AA}10{II}] {AA}Cek Opsi
