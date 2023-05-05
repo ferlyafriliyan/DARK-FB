@@ -930,7 +930,12 @@ class logo:
 		my_logo = f"""{MM} ____   _____  _____  _____    {QQ}_____  _____  _____  _____  _____  _____  _____  _____
 {MM}|    \ |  _  || __  ||  |  |  {QQ}|   __||  _  ||     ||   __|| __  ||     ||     ||  |  |
 {MM}|  |  ||     ||    -||    -|  {QQ}|   __||     ||   --||   __|| __ -||  |  ||  |  ||    -|
-{MM}|____/ |__|__||__|__||__|__|  {QQ}|__|   |__|__||_____||_____||_____||_____||_____||__|__|"""
+{MM}|____/ |__|__||__|__||__|__|  {QQ}|__|   |__|__||_____||_____||_____||_____||_____||__|__|
+                         {GOD} Informations Author [ And ] Developer {GOD}
+{WOR} Author    {AA}: {II}Risky [ Dumai-991 ]
+{WOR} Developer {AA}: {II}A-Haganezuka [ Denventa ]
+{WOR} Update By {AA}: {II}Afriliyan Haganezuka & Merch Elz
+{WOR} Facebook  {AA}: {II}Facebook.com/Denventa.Xayonara.Team.UnlimitedARMY"""
 		prints(Panel(my_logo,width=90,padding=0,style=xtc["warna"]["rich"],title=f"{QQ}•{II}•{MM}• {OO}XAYONARA-CODETEAM {MM}•{II}•{QQ}•"))
 class login:
 	def __init__(self):
@@ -1113,10 +1118,7 @@ class menu:
 			for x in range(jmlh_kata):end_key += "*"
 			key_ = my_key[0]+"-"+end_key+"-"+my_key[2]
 		else:my_status = "Member Biasa";key_ = "Member"
-		tampilan_data = f"""{WOR}By Author  : Risky [ Dumai-991 ]
-{WOR}Devlopr  : {KK}A-Haganezuka
-{WOR}Updated  : {KK}Merch Elz & Ferly
-{WOR}Name     : {KK}{nama}{QQ}
+		tampilan_data = f"""{WOR}Name     : {KK}{nama}{QQ}
 {WOR}Your ID  : {KK}{id}{QQ}
 {WOR}Status   : {JJ}Premium 3 Days
 {WOR}Birthday : {KK}{bd}
@@ -1125,9 +1127,8 @@ class menu:
 {WOR}City     : {KK}{api['city']}
 {WOR}Isp      : {KK}{api['isp']}
 {WOR}Time     : {KK}{datetime.now().strftime('%H:%M')}"""
-		_tomas.append(Panel(tampilan_data,width=42,title=f"{GOD}{PP}Author{GOD}",style=f"{A}"))
-		_tomas.append(Panel(time,width=45,title=f"{GOD}{PP}Account{GOD}",style=f"{A}"))
-		_tomas.append(Panel(time,width=45,title=f"{GOD}{PP}Status{GOD}",style=f"{A}"))
+		_tomas.append(Panel(tampilan_data,width=42,title=f"{GOD}{PP}Status Account{GOD}",style=f"{A}"))
+		_tomas.append(Panel(time,width=45,title=f"{GOD}{PP}Status Account{GOD}",style=f"{A}"))
 		console.print(Columns(_tomas))
 
 
