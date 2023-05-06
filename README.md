@@ -20,6 +20,12 @@ Welcome
 ```
 ### ⇨  Install Script Di Termux
 ```python
+termux-setup-storage
+termux-change-repo
+pkg update && pkg upgrade
+```
+
+```python
 termux-change-repo
 rm -rf $HOME/DARK-FB
 pkg update && pkg upgrade -y
