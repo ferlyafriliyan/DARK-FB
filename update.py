@@ -2,14 +2,14 @@ import os,sys
 
 
 
-Denventa = """
+Dvanmeploph = """
 cd $HOME
 cd DARK-FB
 mv data $HOME
 mv results $HOME
 cd
 rm -rf DARK-FB
-git clone https://github.com/Denventa/DARK-FB
+git clone https://github.com/Dvanmeploph/DARK-FB
 cd $HOME
 mv data DARK-FB
 mv results DARK-FB
@@ -17,7 +17,7 @@ cd DARK-FB
 """
 
 print(" |-->Tunggu Sebentar Sedang Update Script....")
-os.system(Denventa)
+os.system(Dvanmeploph)
 print(' |')
 print(' |')
 print(' |-->Update Script Sudah Selesai...')
