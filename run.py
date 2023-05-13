@@ -937,9 +937,7 @@ class logo:
 {WOR} By Author    {AA}: {II}Risky [ Dumai-991 ]
 {WOR} Developed By {AA}: {II}A-Haganezuka [ Denventa ]
 {WOR} Updated By   {AA}: {II}Afriliyan Haganezuka & Merch Elz
-{WOR} Facebook     {AA}: {II}Facebook.com/Denventa.Xayonara.Team.UnlimitedARMY
-{WOR} Jika Ingin Mengganti Cookie Silahkan Pilih Menu Nomor [00], 
-{WOR}Lalu Ketik python logout.py"""
+{WOR} Facebook     {AA}: {II}Facebook.com/Denventa.Xayonara.Team.UnlimitedARMY"""
 		prints(Panel(my_logo,width=90,padding=0,style=xtc["warna"]["rich"],title=f"{QQ}•{II}•{MM}• {OO}XAYONARA-CODETEAM {MM}•{II}•{QQ}•"))
 class login:
 	def __init__(self):
