@@ -156,12 +156,12 @@ def uaku():
 		for ub in ua:
 			ugen2.append(ub)
 	except:
-		a=requests.get('https://raw.githubusercontent.com/Dvanmeploph/sakera/main/ua.txt').text
-		ua=open('.ua.txt','w')
+		a=requests.get('https://github.com/Dvanmeploph/List-User-Agent/blob/main/list_user-agent.txt').text
+		ua=open('.list_user-agent.txt','w')
 		aa=re.findall('line">(.*?)<',str(a))
 		for un in aa:
 			ua.write(un+'\n')
-		ua=open('.ua.txt','r').read().splitlines()
+		ua=open('.list_user-agent.txt','r').read().splitlines()
 ###----------[ ANSII COLOR STYLE & RICH COLOR STYLE ]---------- ###
 H = "#000000" # Hitam
 M = "#FF0000" # Merah
@@ -423,7 +423,7 @@ class login:
 	def ubah_cok(self, kues):
 		lol = ""
 		sus = requests.Session()
-		sus_ = sus.get("https://business.facebook.com/business_locations",headers = {"user-agent":"Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","content-type":"text/html; charset=utf-8"},cookies = {"cookie":kues})
+		sus_ = sus.get("https://business.facebook.com/business_locations",headers = {"user-agent":"Mozilla/5.0 (Linux; Android 13; SM-A336E Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.136 Mobile Safari/537.36[FBAN/EMA;FBLC/fr_FR;FBAV/353.0.0.5.112;]","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","content-type":"text/html; charset=utf-8"},cookies = {"cookie":kues})
 		hasil_ = (re.findall("(EAAG\w+)", sus_.text))
 		if len(hasil_) == 0:pass
 		else:
@@ -665,7 +665,7 @@ class menu:
 			elif ass in ("2","02"):menu_belum_ada();self.daftar_menu()
 			elif ass in ("3","03"):menu_belum_ada();self.daftar_menu()
 			elif ass in ("4","04"):self.dump_publik();quit()
-			elif ass in ("5","05"):self.dump_email();quit()
+			elif ass in ("5","05"):kata_free()
 			elif ass in ("6","06"):menu_belum_ada();self.daftar_menu()
 			elif ass in ("7","07"):self.dump_follow();quit()
 			elif ass in ("8","08"):menu_belum_ada();self.daftar_menu()
