@@ -2,7 +2,6 @@
 # print('Anggap Saja Sebagai Tanda Terima Kasih') 
 # print('Karena Gw Udah Ngilangin Bagian Yang Error Di Script Ini')
 # print('  [ Denventa Afriliyan Ferly Shishigami X ]  ')
-# A-Haganezuka [ Denventa Afriliyan Ferly Shishigami X - Haganezuka ]
 #=======================================[IMPORT]=======================================#
                  # print('  [ Denventa Afriliyan Ferly Shishigami X ]  ')
 try:
