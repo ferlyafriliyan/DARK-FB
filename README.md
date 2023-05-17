@@ -38,7 +38,7 @@ pip3 install -r requirements.txt
 ```
 
 * **Untuk Jalankan Script Bisa DiKetik :(To run the script, you can type:)**
-* ```python run.py```
+* ```python run.cpp```
 
 * **Untuk Stop Script Tekan : (To Stop Script Press :)**
 * ```CTRL + Z```
