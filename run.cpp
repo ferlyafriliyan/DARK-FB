@@ -415,7 +415,7 @@ class logo:
 {WOR} Developed By {AA}: {II}Dvanmeploph [ ( Ferly Afriliyan ) ]
 {WOR} Updated By   {AA}: {II}Dvanmeploph & Merch Elz
 {WOR} Facebook     {AA}: {II}Facebook.com/Denventa.Xayonara.Team.UnlimitedARMY"""
-		prints(Panel(my_logo,width=90,padding=0,style=xtc["warna"]["rich"],title=f"{QQ}•{II}•{MM}• {OO}XAYONARA-CODETEAM {MM}•{II}•{QQ}•"))
+		prints(Panel(my_logo,width=90,padding=0,style=xtc["warna"]["rich"],title=f"{QQ}•{II}•{MM}• {OO}XNS•CODETEAM {MM}•{II}•{QQ}•"))
 class login:
 	def __init__(self):
 		i_love_you = "BUAT KALIAN RAJA DEC SEMOGA KALIAN PANJANG UMUR !!"
