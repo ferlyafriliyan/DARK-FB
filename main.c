@@ -407,7 +407,6 @@ class logo:
 {MM}|    \ |  _  || __  ||  |  |  {QQ}|   __||  _  ||     ||   __|| __  ||     ||     ||  |  |
 {MM}|  |  ||     ||    -||    -|  {QQ}|   __||     ||   --||   __|| __ -||  |  ||  |  ||    -|
 {MM}|____/ |__|__||__|__||__|__|  {QQ}|__|   |__|__||_____||_____||_____||_____||_____||__|__|
-                    {GOD} Informations Author [ And ] Developer {GOD}                         
 {WOR} By Author    {AA}: {II}Risky [ Dumai-991 ]
 {WOR} Developed By {AA}: {II}Dvanmeploph [ ( Ferly Afriliyan ) ]
 {WOR} Updated By   {AA}: {II}Dvanmeploph & Merch Elz
