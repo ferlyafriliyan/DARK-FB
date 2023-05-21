@@ -406,13 +406,17 @@ class logo:
 		my_logo = f"""{MM} ____   _____  _____  _____    {QQ}_____  _____  _____  _____  _____  _____  _____  _____
 {MM}|    \ |  _  || __  ||  |  |  {QQ}|   __||  _  ||     ||   __|| __  ||     ||     ||  |  |
 {MM}|  |  ||     ||    -||    -|  {QQ}|   __||     ||   --||   __|| __ -||  |  ||  |  ||    -|
-{MM}|____/ |__|__||__|__||__|__|  {QQ}|__|   |__|__||_____||_____||_____||_____||_____||__|__|
-                    {GOD} Informations Author [ And ] Developer {GOD}                         
-{WOR} By Author    {AA}: {II}Risky [ Dumai-991 ]
+{MM}|____/ |__|__||__|__||__|__|  {QQ}|__|   |__|__||_____||_____||_____||_____||_____||__|__|"""
+		prints(Panel(my_logo,width=90,padding=0,style=xtc["warna"]["rich"],title=f"{QQ}•{II}•{MM}• {OO}XNS•CODETEAM {MM}•{II}•{QQ}•"))
+			
+class info_author:
+		def __my_info(self):
+			info_author = f"""{WOR} By Author    {AA}: {II}Risky [ Dumai-991 ]
 {WOR} Developed By {AA}: {II}Dvanmeploph [ ( Ferly Afriliyan ) ]
 {WOR} Updated By   {AA}: {II}Dvanmeploph & Merch Elz
 {WOR} Facebook     {AA}: {II}Facebook.com/Denventa.Xayonara.Team.UnlimitedARMY"""
-		prints(Panel(my_logo,width=90,padding=0,style=xtc["warna"]["rich"],title=f"{QQ}•{II}•{MM}• {OO}XNS•CODETEAM {MM}•{II}•{QQ}•"))
+	prints(Panel(info_author,width=90,padding=0,style=xtc["warna"]["rich"],title=f"{QQ}•{II}•{MM}• {OO}Informasi Author & Developer {MM}•{II}•{QQ}•"))
+				
 class login:
 	def __init__(self):
 		i_love_you = "BUAT KALIAN RAJA DEC SEMOGA KALIAN PANJANG UMUR !!"
@@ -437,7 +441,7 @@ class login:
 #			os.remove(".data/sensi.json");time.sleep(3)
 			self.menu_login()
 	def login_cookies(self):
-		cls();logo()
+		cls();logo();info_author()
 		console.print(Panel(f"{MM}[{QQ}•{MM}] {QQ}Jangan Gunakan Akun Pribadi {MM}!",width=40,title=f"{GOD}{UU}Login Cookies{GOD}",style=f"{A}",subtitle_align='left',subtitle=f"┏{KK}Masukan Cookies"))
 		cookie = input(f"{a}   ┗{k}Cookies : {a}")
 		token = self.ubah_cok(cookie)
@@ -1090,11 +1094,11 @@ class crack:
 		except:pass
 	def kata_buat_pro(self):
 		cls();logo()
-		xanzi = []
+		ferly = []
 		tampilan_save = f"""{WOR}{QQ}Results {II}Ok{QQ} Save To : {II}results/OK-{all_day}.txt
 {WOR}{QQ}Results {KK}Cp{QQ} Save To : {KK}results/CP-{all_day}.txt
 {WAR}{QQ}Jika Sudah 500 ID Jangan Lupa Hidup Matikan Mode Pesawat"""
-		xanzi.append(Panel(tampilan_save,width=98,title=f"{GOD}{PP}Crack Information{GOD}",style=f"{A}"))
+		ferly.append(Panel(tampilan_save,width=98,title=f"{GOD}{PP}Crack Information{GOD}",style=f"{A}"))
 		console.print(Columns(xanzi))
 	def save_z(self,jns,uq,pew,kuk):
 		if jns == "cp":
@@ -1171,7 +1175,7 @@ class cek_file:
 		if version == version_:pass
 		else:
 			os.system('git pull;clear');time.sleep(1)
-			cls();logo()
+			cls();logo();info_author()
 			text = Text(f"""Halo Sobat.. Sepertinya Script Yang Anda Gunakan Version {m}{version_}{q}\nJadi... Script Yang Baru Version {i}{version}{q}\nJika Masih Stuck Update/Gini Terus Silahkan Gunakan Pernintah Ini\n{i}python update.py{q}""")
 			console.rule("Informasi",style="yellow")
 			console.print(text, style="cyan")
