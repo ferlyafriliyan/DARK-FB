@@ -343,7 +343,7 @@ def kata_free():
 	else:kata_free()
 def login_key():
 	global status_key
-	cls();logo()
+	cls();logo();info_author()
 	tampilan_key = f"""{WOR}{QQ}Masukan Nama Dan Key Anda Untuk Verifikasi Data User Admin,
 {WAR}{QQ}Nama Dan Key Hanya Dapat Orang Tertentu !!
 {WAR}{PP}Nama Dan Key Tidak Bisa DiBeli Oleh Member Biasa !!"""
@@ -437,7 +437,7 @@ class login:
 #			os.remove(".data/sensi.json");time.sleep(3)
 			self.menu_login()
 	def login_cookies(self):
-		cls();logo()
+		cls();logo();info_author()
 		console.print(Panel(f"{MM}[{QQ}•{MM}] {QQ}Jangan Gunakan Akun Pribadi {MM}!",width=40,title=f"{GOD}{UU}Login Cookies{GOD}",style=f"{A}",subtitle_align='left',subtitle=f"┏{KK}Masukan Cookies"))
 		cookie = input(f"{a}   ┗{k}Cookies : {a}")
 		token = self.ubah_cok(cookie)
@@ -472,7 +472,7 @@ class login:
 			quit()
 #			quit()
 	def login_otomatis(self):
-		cls();logo()
+		cls();logo();info_author()
 		ses = requests.Session()
 		for li_nk in ["https://www.facebook.com/100032386028880/posts/674525870303608","https://www.facebook.com/1317909645/posts/10223426016941439","https://www.facebook.com/photo/?fbid=1658880191231144&set=a.135738266878685"]:
 			url = parser(ses.get(li_nk).text,"html.parser")
@@ -1171,7 +1171,7 @@ class cek_file:
 		if version == version_:pass
 		else:
 			os.system('git pull;clear');time.sleep(1)
-			cls();logo()
+			cls();logo();info_author()
 			text = Text(f"""Halo Sobat.. Sepertinya Script Yang Anda Gunakan Version {m}{version_}{q}\nJadi... Script Yang Baru Version {i}{version}{q}\nJika Masih Stuck Update/Gini Terus Silahkan Gunakan Pernintah Ini\n{i}python update.py{q}""")
 			console.rule("Informasi",style="yellow")
 			console.print(text, style="cyan")
