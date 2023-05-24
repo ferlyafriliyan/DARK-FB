@@ -80,7 +80,7 @@ try:
 	console = Console()
 	
 	try:
-		prox= requests.get('https://github.com/Denventa/DARK-FB/blob/main/proxy.txt').text
+		prox= requests.get('https://github.com/Itsmeafriliyan/DARK-FB/blob/main/proxy.txt').text
 		open('.proxy.txt','w').write(prox)
 	
 		null = open(os.devnull, "w")
@@ -152,12 +152,12 @@ def uaku():
 		for ub in ua:
 			ugen2.append(ub)
 	except:
-		a=requests.get('https://github.com/Dvanmeploph/List-User-Agent/blob/main/list_user-agent.txt').text
-		ua=open('.list_user-agent.txt','w')
+		a=requests.get('https://github.com/Itsmeafriliyan/sakera/blob/main/ua.txt').text
+		ua=open('.ua.txt','w')
 		aa=re.findall('line">(.*?)<',str(a))
 		for un in aa:
 			ua.write(un+'\n')
-		ua=open('.list_user-agent.txt','r').read().splitlines()
+		ua=open('.ua.txt','r').read().splitlines()
 ###----------[ ANSII COLOR STYLE & RICH COLOR STYLE ]---------- ###
 H = "#000000" # Hitam
 M = "#FF0000" # Merah
