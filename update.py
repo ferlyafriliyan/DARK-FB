@@ -9,7 +9,7 @@ mv data $HOME
 mv results $HOME
 cd
 rm -rf DARK-FB
-git clone https://github.com/Itsmeafriliyan/DARK-FB
+git clone https://github.com/Livian-xyz/DARK-FB
 cd $HOME
 mv data DARK-FB
 mv results DARK-FB
@@ -21,5 +21,5 @@ os.system(Dvanmeploph)
 print(' |')
 print(' |')
 print(' |-->Update Script Sudah Selesai...')
-print(' |-->Silahkan Jalankan Perintah Ini : python main.cpp')
+print(' |-->Silahkan Jalankan Perintah Ini : python main.py')
 os.sys.exit()
